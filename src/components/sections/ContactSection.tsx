@@ -91,8 +91,7 @@ ${formData.message}
         body: JSON.stringify({
           to: 'diptodev17@gmail.com',
           subject: `New Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
-          text: emailContent,
-          html: emailContent.replace(/\n/g, '<br>')
+          text: emailContent
         }),
       })
 
@@ -137,7 +136,7 @@ ${formData.message}
               </span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Schedule a strategic consultation with our AI experts. We'll analyze your business needs
+              Schedule a strategic consultation with our AI experts. We&apos;ll analyze your business needs
               and design a customized roadmap for success.
             </p>
           </div>

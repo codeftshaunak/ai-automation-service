@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Drypta Agents - AI Solutions Website
 
-## Getting Started
+A modern, professional website built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui components. This website showcases AI solutions and services with a clean, responsive design inspired by cutting-edge technology platforms.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Stack**: Built with Next.js 15, TypeScript, and Tailwind CSS
+- **Professional Design**: Clean, modern UI with glassmorphism effects and smooth animations
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Contact Form**: Working contact form with email functionality
+- **SEO Optimized**: Built-in Next.js SEO optimization
+- **Performance Focused**: Optimized for fast loading and smooth interactions
+
+## 🛠️ Technologies Used
+
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Email**: Nodemailer
+- **Fonts**: Inter (Google Fonts)
+
+## 📋 Prerequisites
+
+- Node.js 18.0 or later
+- npm or yarn package manager
+
+## ⚡ Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd drypta-nextjs
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   Edit `.env.local` and add your email configuration:
+   ```env
+   EMAIL_USER=your-email@gmail.com
+   EMAIL_PASS=your-app-password
+   CONTACT_EMAIL=diptodev17@gmail.com
+   ```
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📧 Email Setup
+
+To enable the contact form email functionality:
+
+### Gmail Setup (Recommended)
+1. Enable 2-Factor Authentication on your Gmail account
+2. Generate an App Password:
+   - Go to Google Account settings
+   - Security → 2-Step Verification → App passwords
+   - Generate a password for "Mail"
+3. Use your Gmail address and the generated app password in `.env.local`
+
+### Other Email Providers
+You can configure other SMTP providers by updating the transporter configuration in `src/app/api/send-email/route.ts`.
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/
+│   ├── api/send-email/          # Email API endpoint
+│   ├── globals.css              # Global styles
+│   ├── layout.tsx              # Root layout
+│   └── page.tsx                # Home page
+├── components/
+│   ├── layout/
+│   │   ├── Navigation.tsx      # Navigation component
+│   │   └── Footer.tsx          # Footer component
+│   ├── sections/
+│   │   ├── HeroSection.tsx     # Hero section
+│   │   ├── AboutSection.tsx    # About section
+│   │   ├── ServicesSection.tsx # Services section
+│   │   └── ContactSection.tsx  # Contact section
+│   └── ui/                     # shadcn/ui components
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Professional Color Scheme**: Dark theme with indigo/purple gradient accents
+- **Glassmorphism Effects**: Modern frosted glass UI elements
+- **Smooth Animations**: Hover effects and transitions
+- **Typography**: Inter font for excellent readability
+- **Responsive Grid**: Mobile-first responsive design
+- **Interactive Elements**: Smooth scrolling navigation and form interactions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deployment
 
-## Learn More
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy automatically
 
-To learn more about Next.js, take a look at the following resources:
+### Other Platforms
+You can deploy to any platform that supports Next.js:
+- Netlify
+- Railway
+- DigitalOcean App Platform
+- AWS Amplify
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Colors
+Edit the Tailwind configuration or CSS variables to change the color scheme.
 
-## Deploy on Vercel
+### Content
+Update the content in each section component:
+- Hero: `src/components/sections/HeroSection.tsx`
+- About: `src/components/sections/AboutSection.tsx`
+- Services: `src/components/sections/ServicesSection.tsx`
+- Contact: `src/components/sections/ContactSection.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Styling
+- Global styles: `src/app/globals.css`
+- Component-specific styles: Use Tailwind classes
+- Custom animations: Add to globals.css
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📞 Support
+
+For support or questions about this website, please contact:
+- Email: diptodev17@gmail.com
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Built with ❤️ using Next.js, TypeScript, and modern web technologies.

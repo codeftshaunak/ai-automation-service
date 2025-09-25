@@ -3,16 +3,16 @@ import nodemailer from 'nodemailer'
 
 export async function POST(request: NextRequest) {
   try {
-    const { to, subject, text, html } = await request.json()
+    const { to, subject, text } = await request.json()
 
     // Create transporter using SMTP (you'll need to configure with actual email service)
-    const transporter = nodemailer.createTransporter({
-      service: 'gmail', // or your preferred email service
-      auth: {
-        user: process.env.EMAIL_USER || 'your-email@gmail.com',
-        pass: process.env.EMAIL_PASS || 'your-app-password'
-      }
-    })
+    // const transporter = nodemailer.createTransporter({
+    //   service: 'gmail', // or your preferred email service
+    //   auth: {
+    //     user: process.env.EMAIL_USER || 'your-email@gmail.com',
+    //     pass: process.env.EMAIL_PASS || 'your-app-password'
+    //   }
+    // })
 
     // For now, we'll simulate sending and just log the email
     console.log('Contact Form Submission:')
