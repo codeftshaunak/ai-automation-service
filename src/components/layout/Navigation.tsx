@@ -31,7 +31,7 @@ export default function Navigation() {
         ? 'bg-slate-900/90 backdrop-blur-xl border-b border-slate-700/30 shadow-2xl shadow-indigo-500/10'
         : 'bg-transparent'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Enhanced Logo */}
           <div className="flex items-center space-x-3 group">

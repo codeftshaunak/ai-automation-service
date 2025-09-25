@@ -13,7 +13,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Enhanced Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-900/30 to-purple-900/20" />
@@ -28,11 +28,11 @@ export default function HeroSection() {
         <div className="absolute bottom-20 right-20 w-5 h-5 bg-indigo-400/10 rounded-full animate-bounce" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-10">
           {/* Enhanced Badge */}
           <div className="flex justify-center animate-fadeInUp">
-            <Badge variant="outline" className="px-6 py-3 text-lg bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border-indigo-500/30 backdrop-blur-xl">
+            <Badge variant="outline" className="px-4 py-2 text-sm bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border-indigo-500/30 backdrop-blur-xl">
               <Sparkles className="w-5 h-5 mr-2 text-indigo-400" />
               <span className="bg-gradient-to-r from-indigo-300 to-purple-300 bg-clip-text text-transparent font-semibold">
                 Next-Generation AI Solutions
@@ -42,7 +42,7 @@ export default function HeroSection() {
 
           {/* Enhanced Main Title */}
           <div className="space-y-6 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-none">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none">
               <span className="block mb-4">
                 <span className="bg-gradient-to-r from-indigo-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent animate-pulse">
                   AI Agents
@@ -55,13 +55,13 @@ export default function HeroSection() {
                 </span>
                 <span className="absolute -inset-1 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 blur-xl -z-10 animate-pulse" />
               </span>
-              <span className="block text-white/80 text-lg sm:text-2xl lg:text-3xl font-medium mt-4 tracking-wide">
+              <span className="block text-white/80 text-base sm:text-lg lg:text-xl font-medium mt-4 tracking-wide">
                 Everything
               </span>
             </h1>
 
             {/* Enhanced Subtitle */}
-            <p className="max-w-4xl mx-auto text-xl sm:text-2xl text-gray-300 leading-relaxed font-light">
+            <p className="max-w-4xl mx-auto text-lg sm:text-xl text-gray-300 leading-relaxed font-light">
               Deploy autonomous AI agents that learn, adapt, and execute complex business operations
               <span className="text-indigo-300 font-medium"> with unprecedented intelligence.</span>
             </p>
@@ -72,7 +72,7 @@ export default function HeroSection() {
             <Button
               size="lg"
               onClick={() => scrollToSection('services')}
-              className="relative group bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 text-white px-12 py-6 text-xl font-bold rounded-full shadow-2xl hover:shadow-indigo-500/25 transition-all duration-300 transform hover:scale-105"
+              className="relative group bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 hover:from-indigo-500 hover:via-purple-500 hover:to-indigo-600 text-white px-8 py-4 text-lg font-bold rounded-full shadow-2xl hover:shadow-indigo-500/25 transition-all duration-300 transform hover:scale-105"
             >
               <span className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-300" />
               <span className="relative flex items-center">
@@ -86,7 +86,7 @@ export default function HeroSection() {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="group relative border-2 border-indigo-400/30 bg-slate-800/30 backdrop-blur-xl text-indigo-300 hover:text-white hover:bg-indigo-500/20 px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 hover:border-indigo-400 hover:scale-105"
+              className="group relative border-2 border-indigo-400/30 bg-slate-800/30 backdrop-blur-xl text-indigo-300 hover:text-white hover:bg-indigo-500/20 px-8 py-4 text-lg font-bold rounded-full transition-all duration-300 hover:border-indigo-400 hover:scale-105"
             >
               <Play className="mr-3 h-6 w-6 group-hover:scale-110 transition-transform" />
               Watch Demo
@@ -96,13 +96,13 @@ export default function HeroSection() {
 
           {/* Enhanced Stats */}
           <div className="pt-20 animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="group text-center p-6 rounded-2xl bg-gradient-to-br from-indigo-500/5 to-purple-500/5 border border-indigo-500/10 hover:border-indigo-500/30 transition-all duration-300 hover:scale-105">
                 <div className="space-y-3">
                   <div className="relative">
                     <Brain className="w-8 h-8 mx-auto text-indigo-400 group-hover:scale-110 transition-transform" />
                   </div>
-                  <div className="text-4xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
                     300%
                   </div>
                   <div className="text-gray-300 font-medium">Average ROI Increase</div>
@@ -115,7 +115,7 @@ export default function HeroSection() {
                   <div className="relative">
                     <Zap className="w-8 h-8 mx-auto text-purple-400 group-hover:scale-110 transition-transform" />
                   </div>
-                  <div className="text-4xl font-black bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
                     50+
                   </div>
                   <div className="text-gray-300 font-medium">Enterprise Clients</div>
@@ -128,7 +128,7 @@ export default function HeroSection() {
                   <div className="relative">
                     <Sparkles className="w-8 h-8 mx-auto text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
-                  <div className="text-4xl font-black bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                     99.9%
                   </div>
                   <div className="text-gray-300 font-medium">Uptime Guarantee</div>

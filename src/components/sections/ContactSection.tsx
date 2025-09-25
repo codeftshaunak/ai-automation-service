@@ -127,7 +127,7 @@ ${formData.message}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_25%,rgba(120,119,198,0.05),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_75%,rgba(139,92,246,0.05),transparent_50%)]" />
 
-        <div className="max-w-8xl mx-auto px-6 lg:px-8 relative z-10">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-8 relative z-10">
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-sm mb-6">
