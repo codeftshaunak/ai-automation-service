@@ -64,8 +64,12 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-24 bg-slate-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-32 bg-slate-800/30 relative">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(120,119,198,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_75%,rgba(139,92,246,0.05),transparent_50%)]" />
+
+      <div className="max-w-8xl mx-auto px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-sm mb-6">
@@ -84,56 +88,56 @@ export default function ServicesSection() {
         </div>
 
         {/* Enhanced Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <Card
                 key={index}
-                className="group relative bg-slate-800/40 border-slate-600/50 hover:border-indigo-400/50 transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-indigo-500/20 backdrop-blur-sm overflow-hidden"
+                className="group relative h-full bg-slate-800/30 border-slate-600/30 hover:border-indigo-400/50 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-indigo-500/15 backdrop-blur-sm overflow-hidden rounded-2xl"
               >
                 {/* Background Gradient Effect */}
-                <div className={`absolute -inset-px bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-lg blur-sm`} />
+                <div className={`absolute -inset-px bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-500 rounded-2xl blur-sm`} />
 
                 {/* Badge */}
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  <Badge variant={service.badgeVariant} className="text-xs">
+                <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-10">
+                  <Badge variant={service.badgeVariant} className="text-xs font-semibold px-3 py-1">
                     {service.badge}
                   </Badge>
                 </div>
 
-                <CardHeader className="pb-6 relative">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg`}>
-                    <Icon className="h-8 w-8 text-white drop-shadow-sm" />
+                <CardHeader className="pb-6 relative p-8">
+                  <div className={`w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xl`}>
+                    <Icon className="h-10 w-10 text-white drop-shadow-sm" />
                   </div>
-                  <CardTitle className="text-2xl text-white group-hover:text-indigo-300 transition-colors font-bold mb-3">
+                  <CardTitle className="text-2xl text-white group-hover:text-indigo-300 transition-colors font-black mb-4 leading-tight">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-300 text-base leading-relaxed group-hover:text-gray-200 transition-colors">
+                  <CardDescription className="text-gray-300 text-base leading-relaxed group-hover:text-gray-200 transition-colors line-clamp-3">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
 
-                <CardContent className="relative">
-                  <div className="space-y-4">
-                    <ul className="space-y-3">
+                <CardContent className="relative px-8 pb-8 flex-1">
+                  <div className="space-y-6 h-full flex flex-col justify-between">
+                    <ul className="space-y-4 flex-1">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
-                          <div className={`w-2 h-2 bg-gradient-to-r ${service.gradient} rounded-full mr-3 opacity-60 group-hover:opacity-100 transition-opacity`} />
-                          {feature}
+                          <div className={`w-3 h-3 bg-gradient-to-r ${service.gradient} rounded-full mr-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0`} />
+                          <span className="font-medium">{feature}</span>
                         </li>
                       ))}
                     </ul>
 
                     {/* Hover Action */}
-                    <div className="pt-4 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <div className="pt-6 opacity-0 group-hover:opacity-100 transform translate-y-3 group-hover:translate-y-0 transition-all duration-300">
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="w-full justify-between text-indigo-300 hover:text-white hover:bg-indigo-500/20"
+                        className="w-full justify-between text-indigo-300 hover:text-white hover:bg-indigo-500/20 py-3 rounded-xl font-semibold"
                       >
                         Learn More
-                        <ArrowRight className="w-4 h-4" />
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </div>
                   </div>
