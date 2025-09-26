@@ -154,6 +154,70 @@
       "viewPricing": "View Pricing"
     }
   },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title": "Choose Your",
+    "titleHighlight": "AI Package",
+    "subtitle": "Flexible pricing options designed to scale with your business needs. Start small and grow with confidence.",
+    "popularBadge": "Most Popular",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "€0-200",
+        "period": "/month",
+        "description": "Perfect for small businesses getting started with AI automation",
+        "features": {
+          "0": "Basic AI chatbot integration",
+          "1": "Email automation workflows",
+          "2": "Simple data analysis reports",
+          "3": "Community support",
+          "4": "5 hours of consultation"
+        }
+      },
+      {
+        "name": "Professional",
+        "price": "€500-1K",
+        "period": "/month",
+        "description": "Ideal for growing businesses ready to scale AI implementation",
+        "features": {
+          "0": "Advanced AI agents deployment",
+          "1": "Custom automation workflows",
+          "2": "Predictive analytics dashboard",
+          "3": "Priority support & training",
+          "4": "20 hours of consultation"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "price": "€2K-3K",
+        "period": "/month",
+        "description": "Comprehensive AI transformation for established organizations",
+        "features": {
+          "0": "Full AI ecosystem integration",
+          "1": "Multi-department automation",
+          "2": "Real-time intelligence platform",
+          "3": "Dedicated account manager",
+          "4": "50 hours of consultation"
+        }
+      },
+      {
+        "name": "Enterprise+",
+        "price": "€5K+",
+        "period": "/month",
+        "description": "Complete AI transformation for large-scale operations",
+        "features": {
+          "0": "Custom AI model development",
+          "1": "Enterprise-wide integration",
+          "2": "Advanced security & compliance",
+          "3": "24/7 dedicated support team",
+          "4": "Unlimited consultation hours"
+        }
+      }
+    ],
+    "getStarted": "Get Started",
+    "customSolution": "Need a custom solution? Our experts are ready to help you design the perfect AI strategy.",
+    "contactSales": "Contact Sales Team"
+  },
   "contact": {
     "badge": "Get In Touch",
     "start": "Start Your AI",

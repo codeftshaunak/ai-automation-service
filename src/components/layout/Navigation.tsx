@@ -124,6 +124,13 @@ export default function Navigation() {
                 <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400 group-hover:w-full transition-all duration-300" />
               </button>
               <button
+                onClick={() => scrollToSection('pricing')}
+                className="relative text-gray-300 hover:text-white transition-colors duration-300 font-medium group"
+              >
+                <span className="relative z-10">Pricing</span>
+                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400 group-hover:w-full transition-all duration-300" />
+              </button>
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="relative text-gray-300 hover:text-white transition-colors duration-300 font-medium group"
               >
@@ -203,6 +210,12 @@ export default function Navigation() {
                 className="block w-full text-left px-4 py-4 text-gray-300 hover:text-white hover:bg-slate-800/50 transition-all duration-300 rounded-xl font-medium"
               >
                 {t('services')}
+              </button>
+              <button
+                onClick={() => scrollToSection('pricing')}
+                className="block w-full text-left px-4 py-4 text-gray-300 hover:text-white hover:bg-slate-800/50 transition-all duration-300 rounded-xl font-medium"
+              >
+                Pricing
               </button>
               <button
                 onClick={() => scrollToSection('contact')}

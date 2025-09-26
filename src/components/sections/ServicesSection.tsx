@@ -218,6 +218,10 @@ export default function ServicesSection() {
                 <Button
                   size="lg"
                   variant="outline"
+                  onClick={() => {
+                    const element = document.getElementById("pricing");
+                    if (element) element.scrollIntoView({ behavior: "smooth" });
+                  }}
                   className="group border-2 border-indigo-400/40 bg-slate-800/40 backdrop-blur-xl text-indigo-300 hover:text-white hover:bg-indigo-500/20 px-10 py-6 text-lg font-bold rounded-full transition-all duration-300 hover:border-indigo-400 hover:scale-105"
                 >
                   {t("cta.viewPricing")}

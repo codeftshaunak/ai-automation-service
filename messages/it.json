@@ -154,6 +154,70 @@
       "viewPricing": "Vedi i prezzi"
     }
   },
+  "pricing": {
+    "badge": "Piani Tariffari",
+    "title": "Scegli il Tuo",
+    "titleHighlight": "Pacchetto IA",
+    "subtitle": "Opzioni tariffarie flessibili progettate per crescere con le esigenze della tua azienda. Inizia in piccolo e cresci con fiducia.",
+    "popularBadge": "Più Popolare",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "€0-200",
+        "period": "/mese",
+        "description": "Perfetto per piccole aziende che iniziano con l'automazione IA",
+        "features": {
+          "0": "Integrazione chatbot IA di base",
+          "1": "Flussi di lavoro automazione email",
+          "2": "Rapporti semplici analisi dati",
+          "3": "Supporto della comunità",
+          "4": "5 ore di consulenza"
+        }
+      },
+      {
+        "name": "Professional",
+        "price": "€500-1K",
+        "period": "/mese",
+        "description": "Ideale per aziende in crescita pronte a scalare l'implementazione IA",
+        "features": {
+          "0": "Deployment agenti IA avanzati",
+          "1": "Flussi di lavoro automazione personalizzati",
+          "2": "Dashboard analytics predittivi",
+          "3": "Supporto prioritario e formazione",
+          "4": "20 ore di consulenza"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "price": "€2K-3K",
+        "period": "/mese",
+        "description": "Trasformazione IA completa per organizzazioni consolidate",
+        "features": {
+          "0": "Integrazione completa ecosistema IA",
+          "1": "Automazione multi-dipartimentale",
+          "2": "Piattaforma intelligence real-time",
+          "3": "Account manager dedicato",
+          "4": "50 ore di consulenza"
+        }
+      },
+      {
+        "name": "Enterprise+",
+        "price": "€5K+",
+        "period": "/mese",
+        "description": "Trasformazione IA completa per operazioni su larga scala",
+        "features": {
+          "0": "Sviluppo modelli IA personalizzati",
+          "1": "Integrazione a livello aziendale",
+          "2": "Sicurezza avanzata e compliance",
+          "3": "Team supporto dedicato 24/7",
+          "4": "Ore di consulenza illimitate"
+        }
+      }
+    ],
+    "getStarted": "Inizia Ora",
+    "customSolution": "Hai bisogno di una soluzione personalizzata? I nostri esperti sono pronti ad aiutarti a progettare la strategia IA perfetta.",
+    "contactSales": "Contatta Team Vendite"
+  },
   "contact": {
     "badge": "Contattaci",
     "start": "Inizia la tua",

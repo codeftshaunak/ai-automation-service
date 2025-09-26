@@ -2,6 +2,7 @@ import Navigation from '@/components/layout/Navigation'
 import HeroSection from '@/components/sections/HeroSection'
 import AboutSection from '@/components/sections/AboutSection'
 import ServicesSection from '@/components/sections/ServicesSection'
+import PricingSection from '@/components/sections/PricingSection'
 import ContactSection from '@/components/sections/ContactSection'
 import Footer from '@/components/layout/Footer'
 import {routing} from '@/i18n/routing'
@@ -27,6 +28,7 @@ export default async function Home({params}: Props) {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <PricingSection />
         <ContactSection />
       </main>
       <Footer />

@@ -154,6 +154,70 @@
       "viewPricing": "Preise ansehen"
     }
   },
+  "pricing": {
+    "badge": "Preispläne",
+    "title": "Wählen Sie Ihr",
+    "titleHighlight": "KI-Paket",
+    "subtitle": "Flexible Preisoptionen, die mit den Bedürfnissen Ihres Unternehmens skalieren. Klein anfangen und mit Vertrauen wachsen.",
+    "popularBadge": "Am Beliebtesten",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "€0-200",
+        "period": "/Monat",
+        "description": "Perfekt für kleine Unternehmen, die mit KI-Automatisierung beginnen",
+        "features": {
+          "0": "Grundlegende KI-Chatbot-Integration",
+          "1": "E-Mail-Automatisierungs-Workflows",
+          "2": "Einfache Datenanalyse-Berichte",
+          "3": "Community-Support",
+          "4": "5 Stunden Beratung"
+        }
+      },
+      {
+        "name": "Professional",
+        "price": "€500-1K",
+        "period": "/Monat",
+        "description": "Ideal für wachsende Unternehmen, die bereit sind, die KI-Implementierung zu skalieren",
+        "features": {
+          "0": "Erweiterte KI-Agenten-Bereitstellung",
+          "1": "Benutzerdefinierte Automatisierungs-Workflows",
+          "2": "Predictive Analytics Dashboard",
+          "3": "Prioritäts-Support und Schulung",
+          "4": "20 Stunden Beratung"
+        }
+      },
+      {
+        "name": "Enterprise",
+        "price": "€2K-3K",
+        "period": "/Monat",
+        "description": "Umfassende KI-Transformation für etablierte Organisationen",
+        "features": {
+          "0": "Vollständige KI-Ökosystem-Integration",
+          "1": "Mehrabteilungsautomatisierung",
+          "2": "Echtzeit-Intelligence-Plattform",
+          "3": "Dedizierter Account Manager",
+          "4": "50 Stunden Beratung"
+        }
+      },
+      {
+        "name": "Enterprise+",
+        "price": "€5K+",
+        "period": "/Monat",
+        "description": "Vollständige KI-Transformation für großmaßstäbliche Operationen",
+        "features": {
+          "0": "Benutzerdefinierte KI-Modell-Entwicklung",
+          "1": "Unternehmensweite Integration",
+          "2": "Erweiterte Sicherheit und Compliance",
+          "3": "24/7 dediziertes Support-Team",
+          "4": "Unbegrenzte Beratungsstunden"
+        }
+      }
+    ],
+    "getStarted": "Loslegen",
+    "customSolution": "Benötigen Sie eine maßgeschneiderte Lösung? Unsere Experten helfen Ihnen gerne dabei, die perfekte KI-Strategie zu entwickeln.",
+    "contactSales": "Vertriebsteam Kontaktieren"
+  },
   "contact": {
     "badge": "Kontaktiere uns",
     "start": "Starte deine",

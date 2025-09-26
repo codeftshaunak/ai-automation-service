@@ -154,6 +154,70 @@
       "viewPricing": "Ver precios"
     }
   },
+  "pricing": {
+    "badge": "Planes de Precios",
+    "title": "Elige Tu",
+    "titleHighlight": "Paquete de IA",
+    "subtitle": "Opciones de precios flexibles diseñadas para crecer con las necesidades de tu empresa. Comienza pequeño y crece con confianza.",
+    "popularBadge": "Más Popular",
+    "plans": [
+      {
+        "name": "Iniciador",
+        "price": "€0-200",
+        "period": "/mes",
+        "description": "Perfecto para pequeñas empresas que comienzan con automatización de IA",
+        "features": {
+          "0": "Integración básica de chatbot de IA",
+          "1": "Flujos de trabajo de automatización de email",
+          "2": "Reportes simples de análisis de datos",
+          "3": "Soporte de la comunidad",
+          "4": "5 horas de consultoría"
+        }
+      },
+      {
+        "name": "Profesional",
+        "price": "€500-1K",
+        "period": "/mes",
+        "description": "Ideal para empresas en crecimiento listas para escalar la implementación de IA",
+        "features": {
+          "0": "Despliegue avanzado de agentes de IA",
+          "1": "Flujos de trabajo de automatización personalizados",
+          "2": "Panel de análisis predictivo",
+          "3": "Soporte prioritario y capacitación",
+          "4": "20 horas de consultoría"
+        }
+      },
+      {
+        "name": "Empresa",
+        "price": "€2K-3K",
+        "period": "/mes",
+        "description": "Transformación integral de IA para organizaciones establecidas",
+        "features": {
+          "0": "Integración completa del ecosistema de IA",
+          "1": "Automatización multi-departamental",
+          "2": "Plataforma de inteligencia en tiempo real",
+          "3": "Gestor de cuenta dedicado",
+          "4": "50 horas de consultoría"
+        }
+      },
+      {
+        "name": "Empresa+",
+        "price": "€5K+",
+        "period": "/mes",
+        "description": "Transformación completa de IA para operaciones a gran escala",
+        "features": {
+          "0": "Desarrollo de modelos de IA personalizados",
+          "1": "Integración a nivel empresarial",
+          "2": "Seguridad avanzada y cumplimiento",
+          "3": "Equipo de soporte dedicado 24/7",
+          "4": "Horas de consultoría ilimitadas"
+        }
+      }
+    ],
+    "getStarted": "Comenzar",
+    "customSolution": "¿Necesitas una solución personalizada? Nuestros expertos están listos para ayudarte a diseñar la estrategia de IA perfecta.",
+    "contactSales": "Contactar Equipo de Ventas"
+  },
   "contact": {
     "badge": "Contáctanos",
     "start": "Comienza tu",

@@ -154,6 +154,70 @@
       "viewPricing": "Voir les tarifs"
     }
   },
+  "pricing": {
+    "badge": "Plans de Tarification",
+    "title": "Choisissez Votre",
+    "titleHighlight": "Package IA",
+    "subtitle": "Options de tarification flexibles conçues pour évoluer avec les besoins de votre entreprise. Commencez petit et grandissez en toute confiance.",
+    "popularBadge": "Le Plus Populaire",
+    "plans": [
+      {
+        "name": "Débutant",
+        "price": "€0-200",
+        "period": "/mois",
+        "description": "Parfait pour les petites entreprises qui débutent avec l'automatisation IA",
+        "features": {
+          "0": "Intégration chatbot IA de base",
+          "1": "Flux de travail d'automatisation des emails",
+          "2": "Rapports d'analyse de données simples",
+          "3": "Support communautaire",
+          "4": "5 heures de consultation"
+        }
+      },
+      {
+        "name": "Professionnel",
+        "price": "€500-1K",
+        "period": "/mois",
+        "description": "Idéal pour les entreprises en croissance prêtes à étendre leur implémentation IA",
+        "features": {
+          "0": "Déploiement d'agents IA avancés",
+          "1": "Flux de travail d'automatisation personnalisés",
+          "2": "Tableau de bord d'analyse prédictive",
+          "3": "Support prioritaire et formation",
+          "4": "20 heures de consultation"
+        }
+      },
+      {
+        "name": "Entreprise",
+        "price": "€2K-3K",
+        "period": "/mois",
+        "description": "Transformation IA complète pour les organisations établies",
+        "features": {
+          "0": "Intégration complète de l'écosystème IA",
+          "1": "Automatisation multi-départements",
+          "2": "Plateforme d'intelligence en temps réel",
+          "3": "Gestionnaire de compte dédié",
+          "4": "50 heures de consultation"
+        }
+      },
+      {
+        "name": "Entreprise+",
+        "price": "€5K+",
+        "period": "/mois",
+        "description": "Transformation IA complète pour les opérations à grande échelle",
+        "features": {
+          "0": "Développement de modèles IA personnalisés",
+          "1": "Intégration à l'échelle de l'entreprise",
+          "2": "Sécurité avancée et conformité",
+          "3": "Équipe de support dédiée 24/7",
+          "4": "Heures de consultation illimitées"
+        }
+      }
+    ],
+    "getStarted": "Commencer",
+    "customSolution": "Besoin d'une solution personnalisée ? Nos experts sont prêts à vous aider à concevoir la stratégie IA parfaite.",
+    "contactSales": "Contacter l'Équipe Commerciale"
+  },
   "contact": {
     "badge": "Contactez-nous",
     "start": "Commencez votre",
