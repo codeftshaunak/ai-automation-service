@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "contact": "联系我们",
+    "getStarted": "开始使用"
+  },
+  "hero": {
+    "badge": "下一代 AI 解决方案",
+    "aiAgents": "AI 代理",
+    "that": "能够",
+    "transform": "改变",
+    "everything": "一切",
+    "subtitle": "部署自主 AI 代理，它们可以学习、适应并执行复杂的业务操作",
+    "subtitleHighlight": "具备前所未有的智能。",
+    "cta": "探索解决方案",
+    "watchDemo": "观看演示",
+    "stats": {
+      "roi": "300%",
+      "roiLabel": "平均投资回报率提升",
+      "roiSubtext": "12 个月内",
+      "clients": "50+",
+      "clientsLabel": "企业客户",
+      "clientsSubtext": "全球信赖",
+      "uptime": "99.9%",
+      "uptimeLabel": "正常运行时间保证",
+      "uptimeSubtext": "全天候可靠"
+    }
+  },
+  "about": {
+    "badge": "关于我们",
+    "our": "我们的",
+    "identity": "身份",
+    "subtitle": "我们是 AI 技术的先驱，致力于创建智能解决方案，帮助企业实现前所未有的增长和效率。",
+    "mission": {
+      "title": "使命",
+      "description": "普及 AI 技术，使各类企业都能获得智能解决方案，从而在数字经济中保持竞争力。"
+    },
+    "vision": {
+      "title": "愿景",
+      "description": "一个 AI 代理无缝集成到业务运营的各个方面，创造前所未有的效率和创新水平的世界。"
+    },
+    "values": {
+      "title": "价值观",
+      "description": "创新、卓越、协作和以人为本的设计指导我们做出的每一个决定和每一个解决方案。"
+    },
+    "coreValuesTitle": "我们的核心价值观实践",
+    "valuesDetails": [
+      {
+        "title": "创新",
+        "description": "推动 AI 技术的边界，创造重新定义可能性的突破性解决方案。"
+      },
+      {
+        "title": "卓越",
+        "description": "在所有工作中保持最高标准，从代码质量到客户服务。"
+      },
+      {
+        "title": "协作",
+        "description": "与客户紧密合作，了解他们的需求并提供量身定制的解决方案。"
+      },
+      {
+        "title": "以人为本",
+        "description": "构建能够增强人类能力而非替代人类的 AI，促进有意义的互动。"
+      }
+    ],
+    "stats": {
+      "experience": "5+",
+      "experienceLabel": "年经验",
+      "models": "100+",
+      "modelsLabel": "已部署 AI 模型",
+      "clients": "50+",
+      "clientsLabel": "满意客户",
+      "support": "24/7",
+      "supportLabel": "提供支持"
+    }
+  },
+  "services": {
+    "badge": "我们的服务",
+    "aiSolutions": "AI 解决方案",
+    "tailored": "为您量身定制",
+    "subtitle": "从智能自动化到预测分析，我们提供全面的 AI 解决方案，改变企业运营和竞争的方式。",
+    "items": [
+      {
+        "title": "智能代理",
+        "description": "部署自主 AI 代理，它们可以学习、适应并在最少人工干预下执行复杂任务。",
+        "features": {
+          "0": "机器学习",
+          "1": "自然语言处理",
+          "2": "自动决策"
+        },
+        "badge": "最受欢迎"
+      },
+      {
+        "title": "智能自动化",
+        "description": "通过智能自动化简化操作，处理重复任务并优化工作流程。",
+        "features": {
+          "0": "流程自动化",
+          "1": "工作流优化",
+          "2": "任务调度"
+        },
+        "badge": "企业级"
+      },
+      {
+        "title": "对话式 AI",
+        "description": "创建提供类人交互的高级聊天机器人和虚拟助手。",
+        "features": {
+          "0": "多语言支持",
+          "1": "上下文感知",
+          "2": "全天候服务"
+        },
+        "badge": "客户最爱"
+      },
+      {
+        "title": "预测智能",
+        "description": "利用高级分析和机器学习预测趋势并做出数据驱动的决策。",
+        "features": {
+          "0": "预测建模",
+          "1": "风险评估",
+          "2": "市场分析"
+        },
+        "badge": "高 ROI"
+      },
+      {
+        "title": "数据智能",
+        "description": "使用我们的综合数据分析平台，将原始数据转化为可操作的洞察。",
+        "features": {
+          "0": "数据挖掘",
+          "1": "模式识别",
+          "2": "实时分析"
+        },
+        "badge": "可扩展"
+      },
+      {
+        "title": "集成平台",
+        "description": "将 AI 能力无缝集成到现有系统和工作流中。",
+        "features": {
+          "0": "API 集成",
+          "1": "定制解决方案",
+          "2": "可扩展架构"
+        },
+        "badge": "灵活"
+      }
+    ],
+    "learnMore": "了解更多",
+    "cta": {
+      "badge": "开始您的 AI 旅程",
+      "ready": "准备好",
+      "transform": "改变",
+      "yourBusiness": "您的企业吗？",
+      "description": "让我们的 AI 专家设计符合您特定需求和目标的定制解决方案。",
+      "descriptionHighlight": "立即开始免费咨询。",
+      "scheduleConsultation": "安排咨询",
+      "viewPricing": "查看价格"
+    }
+  },
+  "contact": {
+    "badge": "联系我们",
+    "start": "开始您的",
+    "transformation": "AI 转型",
+    "subtitle": "与我们的 AI 专家预约战略咨询。我们将分析您的业务需求并设计定制的成功路线图。",
+    "whyPartner": "为什么选择与我们合作？",
+    "benefits": [
+      {
+        "title": "证明的 ROI",
+        "description": "实施后 12 个月内平均投资回报率 300%。"
+      },
+      {
+        "title": "企业安全",
+        "description": "符合 SOC 2 Type II 标准，提供端到端加密和审计跟踪。"
+      },
+      {
+        "title": "专家团队",
+        "description": "拥有博士学位的 AI 研究员和 10+ 年经验的企业架构师。"
+      }
+    ],
+    "contactInfo": {
+      "email": "diptodev17@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "全球可用"
+    },
+    "form": {
+      "title": "请求咨询",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "商务邮箱",
+      "company": "公司名称",
+      "phone": "电话号码",
+      "industry": "行业",
+      "budget": "预算范围",
+      "projectType": "项目类型",
+      "message": "信息",
+      "required": "*",
+      "submit": "发送",
+      "submitting": "发送中...",
+      "selectIndustry": "选择您的行业...",
+      "selectBudget": "选择预算范围...",
+      "selectProject": "选择项目类型..."
+    },
+    "success": "信息发送成功！我们会尽快回复您。",
+    "error": "信息发送失败。请重试或直接联系我们。"
+  },
+  "footer": {
+    "description": "开创性的 AI 解决方案，通过智能自动化、预测分析和对话式技术改变企业。",
+    "quickLinks": "快速链接",
+    "contactInfo": "联系信息",
+    "contact": {
+      "email": "发送邮件给我们",
+      "emailAddress": "dryptaai@gmail.com",
+      "phone": "致电我们",
+      "phoneNumber": "+33 6 35 89 50 73",
+      "message": "发送消息",
+      "quickResponse": "保证快速回复",
+      "support": "提供支持",
+      "supportText": "24/7 客户支持"
+    },
+    "copyright": "© {year} Drypta Agents. 保留所有权利。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie 政策"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "bn": "বাংলা",
+    "it": "Italiano",
+    "hi": "हिन्दी",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

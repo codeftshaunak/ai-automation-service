@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "私たちについて",
+    "services": "サービス",
+    "contact": "お問い合わせ",
+    "getStarted": "はじめる"
+  },
+  "hero": {
+    "badge": "次世代 AI ソリューション",
+    "aiAgents": "AI エージェント",
+    "that": "が",
+    "transform": "変革する",
+    "everything": "すべてを",
+    "subtitle": "自律型 AI エージェントを導入し、学習、適応、複雑なビジネス操作を実行",
+    "subtitleHighlight": "前例のないインテリジェンスで。",
+    "cta": "ソリューションを探る",
+    "watchDemo": "デモを見る",
+    "stats": {
+      "roi": "300%",
+      "roiLabel": "平均 ROI 向上",
+      "roiSubtext": "12 か月以内",
+      "clients": "50+",
+      "clientsLabel": "企業クライアント",
+      "clientsSubtext": "世界中で信頼される",
+      "uptime": "99.9%",
+      "uptimeLabel": "稼働時間保証",
+      "uptimeSubtext": "24時間365日信頼性"
+    }
+  },
+  "about": {
+    "badge": "私たちについて",
+    "our": "私たちの",
+    "identity": "アイデンティティ",
+    "subtitle": "私たちは AI 技術のパイオニアであり、企業の前例のない成長と効率を実現するインテリジェントなソリューションの創造に専念しています。",
+    "mission": {
+      "title": "ミッション",
+      "description": "AI 技術を民主化し、あらゆる規模の企業が利用できるインテリジェントなソリューションを提供することで、デジタル経済で競争できるようにする。"
+    },
+    "vision": {
+      "title": "ビジョン",
+      "description": "AI エージェントがビジネスオペレーションのあらゆる側面にシームレスに統合され、前例のない効率と革新を生み出す世界。"
+    },
+    "values": {
+      "title": "価値観",
+      "description": "イノベーション、卓越性、協力、人間中心設計は、私たちのあらゆる決定とソリューションを導く原則です。"
+    },
+    "coreValuesTitle": "行動に表れる私たちのコアバリュー",
+    "valuesDetails": [
+      {
+        "title": "イノベーション",
+        "description": "AI 技術の限界を押し広げ、可能性を再定義する画期的なソリューションを創造。"
+      },
+      {
+        "title": "卓越性",
+        "description": "コードの品質から顧客サービスまで、すべてにおいて最高水準を維持。"
+      },
+      {
+        "title": "協力",
+        "description": "クライアントと密接に連携し、ニーズを理解し、カスタマイズされたソリューションを提供。"
+      },
+      {
+        "title": "人間中心",
+        "description": "人間の能力を強化する AI を構築し、置き換えるのではなく、有意義な相互作用を促進。"
+      }
+    ],
+    "stats": {
+      "experience": "5+",
+      "experienceLabel": "経験年数",
+      "models": "100+",
+      "modelsLabel": "展開済み AI モデル",
+      "clients": "50+",
+      "clientsLabel": "満足したクライアント",
+      "support": "24/7",
+      "supportLabel": "サポート提供"
+    }
+  },
+  "services": {
+    "badge": "私たちのサービス",
+    "aiSolutions": "AI ソリューション",
+    "tailored": "あなた向けにカスタマイズ",
+    "subtitle": "インテリジェントオートメーションから予測分析まで、ビジネスの運営と競争方法を変革する包括的な AI ソリューションを提供します。",
+    "items": [
+      {
+        "title": "インテリジェントエージェント",
+        "description": "自律型 AI エージェントを導入し、最小限の人間の介入で学習、適応、複雑なタスクを実行。",
+        "features": {
+          "0": "機械学習",
+          "1": "自然言語処理",
+          "2": "自動意思決定"
+        },
+        "badge": "人気"
+      },
+      {
+        "title": "スマートオートメーション",
+        "description": "反復タスクを処理し、ワークフローを最適化するインテリジェントオートメーションで業務を効率化。",
+        "features": {
+          "0": "プロセス自動化",
+          "1": "ワークフロー最適化",
+          "2": "タスクスケジューリング"
+        },
+        "badge": "企業向け"
+      },
+      {
+        "title": "会話型 AI",
+        "description": "人間のような対話を提供する高度なチャットボットと仮想アシスタントを作成。",
+        "features": {
+          "0": "多言語対応",
+          "1": "コンテキスト認識",
+          "2": "24時間対応"
+        },
+        "badge": "顧客のお気に入り"
+      },
+      {
+        "title": "予測インテリジェンス",
+        "description": "高度な分析と機械学習を活用してトレンドを予測し、データに基づく意思決定を行う。",
+        "features": {
+          "0": "予測モデル",
+          "1": "リスク評価",
+          "2": "市場分析"
+        },
+        "badge": "高 ROI"
+      },
+      {
+        "title": "データインテリジェンス",
+        "description": "生データを実用的な洞察に変換する包括的なデータ分析プラットフォーム。",
+        "features": {
+          "0": "データマイニング",
+          "1": "パターン認識",
+          "2": "リアルタイム分析"
+        },
+        "badge": "スケーラブル"
+      },
+      {
+        "title": "統合プラットフォーム",
+        "description": "既存のシステムやワークフローに AI 機能をシームレスに統合。",
+        "features": {
+          "0": "API 統合",
+          "1": "カスタムソリューション",
+          "2": "スケーラブルアーキテクチャ"
+        },
+        "badge": "柔軟"
+      }
+    ],
+    "learnMore": "詳細を見る",
+    "cta": {
+      "badge": "AI 旅を始める",
+      "ready": "準備はできましたか？",
+      "transform": "変革する",
+      "yourBusiness": "あなたのビジネスを？",
+      "description": "当社の AI 専門家が、特定のニーズと目標に合わせたカスタムソリューションを設計。",
+      "descriptionHighlight": "今日、無料相談から始めましょう。",
+      "scheduleConsultation": "相談を予約",
+      "viewPricing": "料金を見る"
+    }
+  },
+  "contact": {
+    "badge": "お問い合わせ",
+    "start": "AI トランスフォーメーションを",
+    "transformation": "始める",
+    "subtitle": "AI 専門家との戦略的な相談を予約してください。ビジネスニーズを分析し、カスタマイズされた成功へのロードマップを設計します。",
+    "whyPartner": "なぜ私たちと提携するのか？",
+    "benefits": [
+      {
+        "title": "証明済み ROI",
+        "description": "導入後 12 か月以内に平均 300% の投資収益率。"
+      },
+      {
+        "title": "企業セキュリティ",
+        "description": "SOC 2 Type II 準拠、エンドツーエンド暗号化と監査ログ。"
+      },
+      {
+        "title": "専門家チーム",
+        "description": "博士レベルの AI 研究者と 10 年以上の経験を持つエンタープライズアーキテクト。"
+      }
+    ],
+    "contactInfo": {
+      "email": "diptodev17@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "世界中で利用可能"
+    },
+    "form": {
+      "title": "相談をリクエスト",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "ビジネスメール",
+      "company": "会社名",
+      "phone": "電話番号",
+      "industry": "業界",
+      "budget": "予算範囲",
+      "projectType": "プロジェクトタイプ",
+      "message": "メッセージ",
+      "required": "*",
+      "submit": "送信",
+      "submitting": "送信中...",
+      "selectIndustry": "業界を選択...",
+      "selectBudget": "予算範囲を選択...",
+      "selectProject": "プロジェクトタイプを選択..."
+    },
+    "success": "メッセージが正常に送信されました！すぐに返信いたします。",
+    "error": "メッセージ送信に失敗しました。再試行するか、直接お問い合わせください。"
+  },
+  "footer": {
+    "description": "先進的な AI ソリューションにより、インテリジェントオートメーション、予測分析、対話型技術でビジネスを変革します。",
+    "quickLinks": "クイックリンク",
+    "contactInfo": "連絡先情報",
+    "contact": {
+      "email": "メールを送る",
+      "emailAddress": "dryptaai@gmail.com",
+      "phone": "電話する",
+      "phoneNumber": "+33 6 35 89 50 73",
+      "message": "メッセージを送る",
+      "quickResponse": "迅速な対応を保証",
+      "support": "サポートあり",
+      "supportText": "24/7 カスタマーサポート"
+    },
+    "copyright": "© {year} Drypta Agents. 無断転載禁止。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cookies": "クッキーポリシー"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "bn": "বাংলা",
+    "it": "Italiano",
+    "hi": "हिन्दी",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

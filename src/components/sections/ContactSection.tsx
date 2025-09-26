@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import toast, { Toaster } from 'react-hot-toast'
+import { useTranslations } from 'next-intl'
 
 interface FormData {
   firstName: string
@@ -25,22 +26,20 @@ interface FormData {
 const benefits = [
   {
     icon: TrendingUp,
-    title: 'Proven ROI',
-    description: 'Average 300% return on AI investment within 12 months of implementation.'
+    index: 0
   },
   {
     icon: Shield,
-    title: 'Enterprise Security',
-    description: 'SOC 2 Type II compliance with end-to-end encryption and audit trails.'
+    index: 1
   },
   {
     icon: Users,
-    title: 'Expert Team',
-    description: 'PhD-level AI researchers and enterprise architects with 10+ years experience.'
+    index: 2
   }
 ]
 
 export default function ContactSection() {
+  const t = useTranslations('contact')
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
     lastName: '',
@@ -96,7 +95,7 @@ ${formData.message}
       })
 
       if (response.ok) {
-        toast.success('Message sent successfully! We\'ll get back to you soon.')
+        toast.success(t('success'))
         setFormData({
           firstName: '',
           lastName: '',
@@ -113,7 +112,7 @@ ${formData.message}
       }
     } catch (error) {
       console.error('Error sending message:', error)
-      toast.error('Failed to send message. Please try again or contact us directly.')
+      toast.error(t('error'))
     } finally {
       setIsSubmitting(false)
     }
@@ -131,17 +130,16 @@ ${formData.message}
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-sm mb-6">
-              <span className="text-indigo-300 text-sm font-medium">Get In Touch</span>
+              <span className="text-indigo-300 text-sm font-medium">{t('badge')}</span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              Start Your AI{' '}
+              {t('start')}{' '}
               <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                Transformation
+                {t('transformation')}
               </span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Schedule a strategic consultation with our AI experts. We&apos;ll analyze your business needs
-              and design a customized roadmap for success.
+              {t('subtitle')}
             </p>
           </div>
 
@@ -151,7 +149,7 @@ ${formData.message}
               <div className="bg-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/50">
                 <h3 className="text-2xl font-semibold mb-8 flex items-center text-white">
                   <CheckCircle className="w-6 h-6 text-indigo-400 mr-3" />
-                  Why Partner With Us?
+                  {t('whyPartner')}
                 </h3>
 
                 <div className="space-y-6">
@@ -164,10 +162,10 @@ ${formData.message}
                         </div>
                         <div>
                           <h4 className="text-lg font-medium text-white mb-2">
-                            {benefit.title}
+                            {t(`benefits.${benefit.index}.title`)}
                           </h4>
                           <p className="text-gray-300 text-sm leading-relaxed">
-                            {benefit.description}
+                            {t(`benefits.${benefit.index}.description`)}
                           </p>
                         </div>
                       </div>
@@ -179,15 +177,15 @@ ${formData.message}
                 <div className="mt-8 pt-8 border-t border-slate-600/50 space-y-4">
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Mail className="w-5 h-5 text-indigo-400" />
-                    <span>diptodev17@gmail.com</span>
+                    <span>{t('contactInfo.email')}</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Phone className="w-5 h-5 text-indigo-400" />
-                    <span>+1 (555) 123-4567</span>
+                    <span>{t('contactInfo.phone')}</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <MapPin className="w-5 h-5 text-indigo-400" />
-                    <span>Available Worldwide</span>
+                    <span>{t('contactInfo.location')}</span>
                   </div>
                 </div>
               </div>
@@ -197,7 +195,7 @@ ${formData.message}
             <div>
               <Card className="bg-slate-700/30 border-slate-600/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">Request Consultation</CardTitle>
+                  <CardTitle className="text-2xl text-white">{t('form.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -205,7 +203,7 @@ ${formData.message}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName" className="text-gray-300">
-                          First Name *
+                          {t('form.firstName')} {t('form.required')}
                         </Label>
                         <Input
                           id="firstName"
@@ -217,7 +215,7 @@ ${formData.message}
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName" className="text-gray-300">
-                          Last Name *
+                          {t('form.lastName')} {t('form.required')}
                         </Label>
                         <Input
                           id="lastName"
@@ -233,7 +231,7 @@ ${formData.message}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="email" className="text-gray-300">
-                          Business Email *
+                          {t('form.email')} {t('form.required')}
                         </Label>
                         <Input
                           id="email"
@@ -261,7 +259,7 @@ ${formData.message}
                     {/* Phone */}
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="text-gray-300">
-                        Phone Number
+                        {t('form.phone')}
                       </Label>
                       <Input
                         id="phone"
@@ -275,7 +273,7 @@ ${formData.message}
                     {/* Industry and Budget */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label className="text-gray-300">Industry</Label>
+                        <Label className="text-gray-300">{t('form.industry')}</Label>
                         <Select value={formData.industry} onValueChange={(value) => handleInputChange('industry', value)}>
                           <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white">
                             <SelectValue placeholder="Select industry" />
@@ -291,7 +289,7 @@ ${formData.message}
                         </Select>
                       </div>
                       <div className="space-y-2">
-                        <Label className="text-gray-300">Budget Range</Label>
+                        <Label className="text-gray-300">{t('form.budget')}</Label>
                         <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)}>
                           <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white">
                             <SelectValue placeholder="Select budget" />
@@ -349,7 +347,7 @@ ${formData.message}
                         'Sending...'
                       ) : (
                         <>
-                          Send Message
+                          {isSubmitting ? t('form.submitting') : t('form.submit')}
                           <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </>
                       )}

@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "Next-Generation AI Solutions",
+    "aiAgents": "AI Agents",
+    "that": "that",
+    "transform": "Transform",
+    "everything": "Everything",
+    "subtitle": "Deploy autonomous AI agents that learn, adapt, and execute complex business operations",
+    "subtitleHighlight": "with unprecedented intelligence.",
+    "cta": "Explore Solutions",
+    "watchDemo": "Watch Demo",
+    "stats": {
+      "roi": "300%",
+      "roiLabel": "Average ROI Increase",
+      "roiSubtext": "Within 12 months",
+      "clients": "50+",
+      "clientsLabel": "Enterprise Clients",
+      "clientsSubtext": "Trusted worldwide",
+      "uptime": "99.9%",
+      "uptimeLabel": "Uptime Guarantee",
+      "uptimeSubtext": "24/7 reliability"
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "our": "Our",
+    "identity": "Identity",
+    "subtitle": "We are pioneers in AI technology, dedicated to creating intelligent solutions that empower businesses to achieve unprecedented growth and efficiency.",
+    "mission": {
+      "title": "Mission",
+      "description": "To democratize AI technology and make intelligent solutions accessible to businesses of all sizes, enabling them to compete in the digital economy."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "A world where AI agents seamlessly integrate into every aspect of business operations, creating unprecedented levels of efficiency and innovation."
+    },
+    "values": {
+      "title": "Values",
+      "description": "Innovation, excellence, collaboration, and human-centered design guide every decision we make and every solution we create."
+    },
+    "coreValuesTitle": "Our Core Values in Action",
+    "valuesDetails": [
+      {
+        "title": "Innovation",
+        "description": "Pushing the boundaries of AI technology to create groundbreaking solutions that redefine what's possible."
+      },
+      {
+        "title": "Excellence",
+        "description": "Maintaining the highest standards in everything we do, from code quality to client service."
+      },
+      {
+        "title": "Collaboration",
+        "description": "Working closely with our clients to understand their needs and deliver tailored solutions."
+      },
+      {
+        "title": "Human-Centered",
+        "description": "Building AI that enhances human capabilities rather than replacing them, fostering meaningful interactions."
+      }
+    ],
+    "stats": {
+      "experience": "5+",
+      "experienceLabel": "Years Experience",
+      "models": "100+",
+      "modelsLabel": "AI Models Deployed",
+      "clients": "50+",
+      "clientsLabel": "Happy Clients",
+      "support": "24/7",
+      "supportLabel": "Support Available"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "aiSolutions": "AI Solutions",
+    "tailored": "Tailored for You",
+    "subtitle": "From intelligent automation to predictive analytics, we offer comprehensive AI solutions that transform how businesses operate and compete.",
+    "items": [
+      {
+        "title": "Intelligent Agents",
+        "description": "Deploy autonomous AI agents that learn, adapt, and execute complex tasks with minimal human intervention.",
+        "features": {
+          "0": "Machine Learning",
+          "1": "Natural Language Processing",
+          "2": "Automated Decision Making"
+        },
+        "badge": "Most Popular"
+      },
+      {
+        "title": "Smart Automation",
+        "description": "Streamline operations with intelligent automation that handles repetitive tasks and optimizes workflows.",
+        "features": {
+          "0": "Process Automation",
+          "1": "Workflow Optimization",
+          "2": "Task Scheduling"
+        },
+        "badge": "Enterprise"
+      },
+      {
+        "title": "Conversational AI",
+        "description": "Create sophisticated chatbots and virtual assistants that provide human-like interactions.",
+        "features": {
+          "0": "Multi-language Support",
+          "1": "Context Awareness",
+          "2": "24/7 Availability"
+        },
+        "badge": "Customer Favorite"
+      },
+      {
+        "title": "Predictive Intelligence",
+        "description": "Leverage advanced analytics and machine learning to forecast trends and make data-driven decisions.",
+        "features": {
+          "0": "Predictive Modeling",
+          "1": "Risk Assessment",
+          "2": "Market Analysis"
+        },
+        "badge": "High ROI"
+      },
+      {
+        "title": "Data Intelligence",
+        "description": "Transform raw data into actionable insights with our comprehensive data analysis platform.",
+        "features": {
+          "0": "Data Mining",
+          "1": "Pattern Recognition",
+          "2": "Real-time Analytics"
+        },
+        "badge": "Scalable"
+      },
+      {
+        "title": "Integration Platform",
+        "description": "Seamlessly integrate AI capabilities into your existing systems and workflows.",
+        "features": {
+          "0": "API Integration",
+          "1": "Custom Solutions",
+          "2": "Scalable Architecture"
+        },
+        "badge": "Flexible"
+      }
+    ],
+    "learnMore": "Learn More",
+    "cta": {
+      "badge": "Start Your AI Journey",
+      "ready": "Ready to",
+      "transform": "Transform",
+      "yourBusiness": "Your Business?",
+      "description": "Let our AI experts design a custom solution that fits your specific needs and objectives.",
+      "descriptionHighlight": "Get started with a free consultation today.",
+      "scheduleConsultation": "Schedule Consultation",
+      "viewPricing": "View Pricing"
+    }
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "start": "Start Your AI",
+    "transformation": "Transformation",
+    "subtitle": "Schedule a strategic consultation with our AI experts. We'll analyze your business needs and design a customized roadmap for success.",
+    "whyPartner": "Why Partner With Us?",
+    "benefits": [
+      {
+        "title": "Proven ROI",
+        "description": "Average 300% return on AI investment within 12 months of implementation."
+      },
+      {
+        "title": "Enterprise Security",
+        "description": "SOC 2 Type II compliance with end-to-end encryption and audit trails."
+      },
+      {
+        "title": "Expert Team",
+        "description": "PhD-level AI researchers and enterprise architects with 10+ years experience."
+      }
+    ],
+    "contactInfo": {
+      "email": "diptodev17@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "Available Worldwide"
+    },
+    "form": {
+      "title": "Request Consultation",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Business Email",
+      "company": "Company Name",
+      "phone": "Phone Number",
+      "industry": "Industry",
+      "budget": "Budget Range",
+      "projectType": "Project Type",
+      "message": "Message",
+      "required": "*",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "selectIndustry": "Select your industry...",
+      "selectBudget": "Select budget range...",
+      "selectProject": "Select project type..."
+    },
+    "success": "Message sent successfully! We'll get back to you soon.",
+    "error": "Failed to send message. Please try again or contact us directly."
+  },
+  "footer": {
+    "description": "Pioneering AI solutions that transform businesses through intelligent automation, predictive analytics, and conversational AI technologies.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "contact": {
+      "email": "Email Us",
+      "emailAddress": "dryptaai@gmail.com",
+      "phone": "Call Us",
+      "phoneNumber": "+33 6 35 89 50 73",
+      "message": "Message Us",
+      "quickResponse": "Quick response guaranteed",
+      "support": "Support Available",
+      "supportText": "24/7 Customer Support"
+    },
+    "copyright": "© {year} Drypta Agents. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "bn": "বাংলা",
+    "it": "Italiano",
+    "hi": "हिन्दी",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

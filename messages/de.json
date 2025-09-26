@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "getStarted": "Loslegen"
+  },
+  "hero": {
+    "badge": "KI-Lösungen der nächsten Generation",
+    "aiAgents": "KI-Agenten",
+    "that": "die",
+    "transform": "transformieren",
+    "everything": "alles",
+    "subtitle": "Setze autonome KI-Agenten ein, die lernen, sich anpassen und komplexe Geschäftsabläufe ausführen",
+    "subtitleHighlight": "mit beispielloser Intelligenz.",
+    "cta": "Lösungen entdecken",
+    "watchDemo": "Demo ansehen",
+    "stats": {
+      "roi": "300%",
+      "roiLabel": "Durchschnittlicher ROI-Anstieg",
+      "roiSubtext": "Innerhalb von 12 Monaten",
+      "clients": "50+",
+      "clientsLabel": "Unternehmenskunden",
+      "clientsSubtext": "Weltweit vertrauenswürdig",
+      "uptime": "99,9%",
+      "uptimeLabel": "Verfügbarkeitsgarantie",
+      "uptimeSubtext": "Zuverlässigkeit rund um die Uhr"
+    }
+  },
+  "about": {
+    "badge": "Über uns",
+    "our": "Unsere",
+    "identity": "Identität",
+    "subtitle": "Wir sind Pioniere in der KI-Technologie, die sich der Entwicklung intelligenter Lösungen widmen, damit Unternehmen beispielloses Wachstum und Effizienz erreichen können.",
+    "mission": {
+      "title": "Mission",
+      "description": "Die Demokratisierung der KI-Technologie und die Bereitstellung intelligenter Lösungen für Unternehmen jeder Größe, um ihnen zu ermöglichen, in der digitalen Wirtschaft wettbewerbsfähig zu sein."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Eine Welt, in der KI-Agenten nahtlos in alle Aspekte von Geschäftsprozessen integriert sind und ein beispielloses Maß an Effizienz und Innovation schaffen."
+    },
+    "values": {
+      "title": "Werte",
+      "description": "Innovation, Exzellenz, Zusammenarbeit und menschenzentriertes Design leiten jede unserer Entscheidungen und Lösungen."
+    },
+    "coreValuesTitle": "Unsere Kernwerte in Aktion",
+    "valuesDetails": [
+      {
+        "title": "Innovation",
+        "description": "Die Grenzen der KI-Technologie verschieben, um bahnbrechende Lösungen zu schaffen, die das Mögliche neu definieren."
+      },
+      {
+        "title": "Exzellenz",
+        "description": "Die höchsten Standards in allem halten – vom Code bis hin zum Kundensupport."
+      },
+      {
+        "title": "Zusammenarbeit",
+        "description": "Enge Zusammenarbeit mit unseren Kunden, um ihre Bedürfnisse zu verstehen und maßgeschneiderte Lösungen zu liefern."
+      },
+      {
+        "title": "Menschenzentriert",
+        "description": "KI so gestalten, dass sie menschliche Fähigkeiten verbessert, anstatt sie zu ersetzen, und sinnvolle Interaktionen fördert."
+      }
+    ],
+    "stats": {
+      "experience": "5+",
+      "experienceLabel": "Jahre Erfahrung",
+      "models": "100+",
+      "modelsLabel": "Eingesetzte KI-Modelle",
+      "clients": "50+",
+      "clientsLabel": "Zufriedene Kunden",
+      "support": "24/7",
+      "supportLabel": "Support verfügbar"
+    }
+  },
+  "services": {
+    "badge": "Unsere Dienstleistungen",
+    "aiSolutions": "KI-Lösungen",
+    "tailored": "Für dich maßgeschneidert",
+    "subtitle": "Von intelligenter Automatisierung bis hin zu prädiktiver Analyse – wir bieten umfassende KI-Lösungen, die die Art und Weise verändern, wie Unternehmen arbeiten und konkurrieren.",
+    "items": [
+      {
+        "title": "Intelligente Agenten",
+        "description": "Setze autonome KI-Agenten ein, die lernen, sich anpassen und komplexe Aufgaben mit minimalem menschlichen Eingreifen ausführen.",
+        "features": {
+          "0": "Maschinelles Lernen",
+          "1": "Sprachverarbeitung (NLP)",
+          "2": "Automatisierte Entscheidungsfindung"
+        },
+        "badge": "Am beliebtesten"
+      },
+      {
+        "title": "Intelligente Automatisierung",
+        "description": "Optimiere Abläufe mit intelligenter Automatisierung, die wiederkehrende Aufgaben übernimmt und Workflows verbessert.",
+        "features": {
+          "0": "Prozessautomatisierung",
+          "1": "Workflow-Optimierung",
+          "2": "Aufgabenplanung"
+        },
+        "badge": "Unternehmen"
+      },
+      {
+        "title": "Konversationelle KI",
+        "description": "Erstelle ausgefeilte Chatbots und virtuelle Assistenten, die menschenähnliche Interaktionen bieten.",
+        "features": {
+          "0": "Mehrsprachige Unterstützung",
+          "1": "Kontextbewusstsein",
+          "2": "Rund um die Uhr verfügbar"
+        },
+        "badge": "Kundenliebling"
+      },
+      {
+        "title": "Prädiktive Intelligenz",
+        "description": "Nutze erweiterte Analysen und maschinelles Lernen, um Trends vorherzusagen und datenbasierte Entscheidungen zu treffen.",
+        "features": {
+          "0": "Prädiktives Modellieren",
+          "1": "Risikobewertung",
+          "2": "Marktanalyse"
+        },
+        "badge": "Hoher ROI"
+      },
+      {
+        "title": "Datenintelligenz",
+        "description": "Verwandle Rohdaten in umsetzbare Erkenntnisse mit unserer umfassenden Datenanalyseplattform.",
+        "features": {
+          "0": "Datenanalyse",
+          "1": "Mustererkennung",
+          "2": "Echtzeitanalyse"
+        },
+        "badge": "Skalierbar"
+      },
+      {
+        "title": "Integrationsplattform",
+        "description": "Integriere KI-Funktionen nahtlos in deine bestehenden Systeme und Workflows.",
+        "features": {
+          "0": "API-Integration",
+          "1": "Maßgeschneiderte Lösungen",
+          "2": "Skalierbare Architektur"
+        },
+        "badge": "Flexibel"
+      }
+    ],
+    "learnMore": "Mehr erfahren",
+    "cta": {
+      "badge": "Starte deine KI-Reise",
+      "ready": "Bereit, dein",
+      "transform": "Unternehmen zu transformieren?",
+      "yourBusiness": "",
+      "description": "Unsere KI-Experten entwerfen eine maßgeschneiderte Lösung, die auf deine spezifischen Bedürfnisse und Ziele abgestimmt ist.",
+      "descriptionHighlight": "Starte heute mit einer kostenlosen Beratung.",
+      "scheduleConsultation": "Beratung vereinbaren",
+      "viewPricing": "Preise ansehen"
+    }
+  },
+  "contact": {
+    "badge": "Kontaktiere uns",
+    "start": "Starte deine",
+    "transformation": "KI-Transformation",
+    "subtitle": "Buche ein Strategiegespräch mit unseren KI-Experten. Wir analysieren deine Geschäftsanforderungen und entwerfen einen maßgeschneiderten Erfolgsfahrplan.",
+    "whyPartner": "Warum mit uns zusammenarbeiten?",
+    "benefits": [
+      {
+        "title": "Nachgewiesener ROI",
+        "description": "Durchschnittlich 300 % ROI innerhalb von 12 Monaten nach der Implementierung."
+      },
+      {
+        "title": "Unternehmenssicherheit",
+        "description": "SOC 2 Typ II konform mit End-to-End-Verschlüsselung und Audit-Trail."
+      },
+      {
+        "title": "Expertenteam",
+        "description": "KI-Forscher mit PhD und Unternehmensarchitekten mit über 10 Jahren Erfahrung."
+      }
+    ],
+    "contactInfo": {
+      "email": "diptodev17@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "Weltweit verfügbar"
+    },
+    "form": {
+      "title": "Beratung anfordern",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "Geschäftliche E-Mail",
+      "company": "Firmenname",
+      "phone": "Telefonnummer",
+      "industry": "Branche",
+      "budget": "Budget",
+      "projectType": "Projekttyp",
+      "message": "Nachricht",
+      "required": "*",
+      "submit": "Absenden",
+      "submitting": "Wird gesendet...",
+      "selectIndustry": "Wähle deine Branche...",
+      "selectBudget": "Wähle ein Budget...",
+      "selectProject": "Wähle einen Projekttyp..."
+    },
+    "success": "Nachricht erfolgreich gesendet! Wir melden uns bald.",
+    "error": "Nachricht konnte nicht gesendet werden. Bitte erneut versuchen oder uns direkt kontaktieren."
+  },
+  "footer": {
+    "description": "Pionierhafte KI-Lösungen, die Unternehmen durch intelligente Automatisierung, prädiktive Analyse und konversationelle Technologien transformieren.",
+    "quickLinks": "Schnellzugriff",
+    "contactInfo": "Kontaktinformationen",
+    "contact": {
+      "email": "Schreib uns",
+      "emailAddress": "dryptaai@gmail.com",
+      "phone": "Ruf uns an",
+      "phoneNumber": "+33 6 35 89 50 73",
+      "message": "Nachricht senden",
+      "quickResponse": "Schnelle Antwort garantiert",
+      "support": "Support verfügbar",
+      "supportText": "24/7 Kundensupport"
+    },
+    "copyright": "© {year} Drypta Agents. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "bn": "বাংলা",
+    "it": "Italiano",
+    "hi": "हिन्दी",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

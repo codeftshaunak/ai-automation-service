@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "contact": "Contatto",
+    "getStarted": "Inizia"
+  },
+  "hero": {
+    "badge": "Soluzioni IA di nuova generazione",
+    "aiAgents": "Agenti IA",
+    "that": "che",
+    "transform": "Trasformano",
+    "everything": "Tutto",
+    "subtitle": "Distribuisci agenti IA autonomi che apprendono, si adattano ed eseguono operazioni aziendali complesse",
+    "subtitleHighlight": "con un’intelligenza senza precedenti.",
+    "cta": "Scopri le soluzioni",
+    "watchDemo": "Guarda la demo",
+    "stats": {
+      "roi": "300%",
+      "roiLabel": "Aumento medio del ROI",
+      "roiSubtext": "In 12 mesi",
+      "clients": "50+",
+      "clientsLabel": "Clienti aziendali",
+      "clientsSubtext": "Affidabili in tutto il mondo",
+      "uptime": "99,9%",
+      "uptimeLabel": "Garanzia di disponibilità",
+      "uptimeSubtext": "Affidabilità 24/7"
+    }
+  },
+  "about": {
+    "badge": "Chi siamo",
+    "our": "La nostra",
+    "identity": "Identità",
+    "subtitle": "Siamo pionieri della tecnologia IA, dedicati alla creazione di soluzioni intelligenti che permettono alle aziende di raggiungere una crescita e un’efficienza senza precedenti.",
+    "mission": {
+      "title": "Missione",
+      "description": "Democratizzare la tecnologia IA e rendere le soluzioni intelligenti accessibili alle aziende di tutte le dimensioni, per consentire loro di competere nell’economia digitale."
+    },
+    "vision": {
+      "title": "Visione",
+      "description": "Un mondo in cui gli agenti IA si integrano perfettamente in tutti gli aspetti delle operazioni aziendali, creando livelli di efficienza e innovazione senza precedenti."
+    },
+    "values": {
+      "title": "Valori",
+      "description": "Innovazione, eccellenza, collaborazione e progettazione centrata sull’uomo guidano ogni nostra decisione e soluzione."
+    },
+    "coreValuesTitle": "I nostri valori fondamentali in azione",
+    "valuesDetails": [
+      {
+        "title": "Innovazione",
+        "description": "Spingere i limiti della tecnologia IA per creare soluzioni rivoluzionarie che ridefiniscono ciò che è possibile."
+      },
+      {
+        "title": "Eccellenza",
+        "description": "Mantenere i più alti standard in tutto ciò che facciamo, dalla qualità del codice al servizio clienti."
+      },
+      {
+        "title": "Collaborazione",
+        "description": "Lavorare a stretto contatto con i nostri clienti per comprendere le loro esigenze e fornire soluzioni su misura."
+      },
+      {
+        "title": "Centrato sull’uomo",
+        "description": "Progettare un’IA che potenzi le capacità umane invece di sostituirle, favorendo interazioni significative."
+      }
+    ],
+    "stats": {
+      "experience": "5+",
+      "experienceLabel": "Anni di esperienza",
+      "models": "100+",
+      "modelsLabel": "Modelli IA distribuiti",
+      "clients": "50+",
+      "clientsLabel": "Clienti soddisfatti",
+      "support": "24/7",
+      "supportLabel": "Supporto disponibile"
+    }
+  },
+  "services": {
+    "badge": "I nostri servizi",
+    "aiSolutions": "Soluzioni IA",
+    "tailored": "Su misura per te",
+    "subtitle": "Dall’automazione intelligente all’analisi predittiva, offriamo soluzioni IA complete che trasformano il modo in cui le aziende operano e competono.",
+    "items": [
+      {
+        "title": "Agenti Intelligenti",
+        "description": "Distribuisci agenti IA autonomi che apprendono, si adattano ed eseguono compiti complessi con un intervento umano minimo.",
+        "features": {
+          "0": "Apprendimento automatico",
+          "1": "Elaborazione del linguaggio naturale",
+          "2": "Decisioni automatizzate"
+        },
+        "badge": "Il più popolare"
+      },
+      {
+        "title": "Automazione intelligente",
+        "description": "Ottimizza le operazioni con un’automazione intelligente che gestisce compiti ripetitivi e ottimizza i flussi di lavoro.",
+        "features": {
+          "0": "Automazione dei processi",
+          "1": "Ottimizzazione dei flussi di lavoro",
+          "2": "Pianificazione delle attività"
+        },
+        "badge": "Enterprise"
+      },
+      {
+        "title": "IA Conversazionale",
+        "description": "Crea chatbot e assistenti virtuali sofisticati che offrono interazioni simili a quelle umane.",
+        "features": {
+          "0": "Supporto multilingue",
+          "1": "Consapevolezza contestuale",
+          "2": "Disponibilità 24/7"
+        },
+        "badge": "Preferito dai clienti"
+      },
+      {
+        "title": "Intelligenza Predittiva",
+        "description": "Sfrutta l’analisi avanzata e l’apprendimento automatico per anticipare le tendenze e prendere decisioni basate sui dati.",
+        "features": {
+          "0": "Modellazione predittiva",
+          "1": "Valutazione dei rischi",
+          "2": "Analisi di mercato"
+        },
+        "badge": "Alto ROI"
+      },
+      {
+        "title": "Data Intelligence",
+        "description": "Trasforma i dati grezzi in informazioni utili grazie alla nostra piattaforma completa di analisi dei dati.",
+        "features": {
+          "0": "Data mining",
+          "1": "Riconoscimento di pattern",
+          "2": "Analisi in tempo reale"
+        },
+        "badge": "Scalabile"
+      },
+      {
+        "title": "Piattaforma di integrazione",
+        "description": "Integra senza problemi le capacità IA nei tuoi sistemi e flussi di lavoro esistenti.",
+        "features": {
+          "0": "Integrazione API",
+          "1": "Soluzioni personalizzate",
+          "2": "Architettura scalabile"
+        },
+        "badge": "Flessibile"
+      }
+    ],
+    "learnMore": "Scopri di più",
+    "cta": {
+      "badge": "Inizia il tuo percorso IA",
+      "ready": "Pronto a",
+      "transform": "Trasformare",
+      "yourBusiness": "la tua azienda?",
+      "description": "I nostri esperti IA progettano una soluzione personalizzata che risponde alle tue esigenze e obiettivi specifici.",
+      "descriptionHighlight": "Inizia oggi con una consulenza gratuita.",
+      "scheduleConsultation": "Pianifica una consulenza",
+      "viewPricing": "Vedi i prezzi"
+    }
+  },
+  "contact": {
+    "badge": "Contattaci",
+    "start": "Inizia la tua",
+    "transformation": "Trasformazione IA",
+    "subtitle": "Pianifica una consulenza strategica con i nostri esperti di IA. Analizzeremo le tue esigenze aziendali e creeremo una roadmap personalizzata verso il successo.",
+    "whyPartner": "Perché collaborare con noi?",
+    "benefits": [
+      {
+        "title": "ROI dimostrato",
+        "description": "Ritorno medio sull’investimento del 300% entro 12 mesi dall’implementazione."
+      },
+      {
+        "title": "Sicurezza Enterprise",
+        "description": "Conformità SOC 2 Type II con crittografia end-to-end e tracciabilità degli audit."
+      },
+      {
+        "title": "Team di esperti",
+        "description": "Ricercatori IA con dottorato e architetti aziendali con oltre 10 anni di esperienza."
+      }
+    ],
+    "contactInfo": {
+      "email": "diptodev17@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "location": "Disponibile in tutto il mondo"
+    },
+    "form": {
+      "title": "Richiedi una consulenza",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email aziendale",
+      "company": "Nome dell’azienda",
+      "phone": "Numero di telefono",
+      "industry": "Settore",
+      "budget": "Budget",
+      "projectType": "Tipo di progetto",
+      "message": "Messaggio",
+      "required": "*",
+      "submit": "Invia",
+      "submitting": "Invio...",
+      "selectIndustry": "Seleziona il tuo settore...",
+      "selectBudget": "Seleziona una fascia di budget...",
+      "selectProject": "Seleziona un tipo di progetto..."
+    },
+    "success": "Messaggio inviato con successo! Ti risponderemo presto.",
+    "error": "Invio del messaggio non riuscito. Riprova o contattaci direttamente."
+  },
+  "footer": {
+    "description": "Soluzioni IA pionieristiche che trasformano le aziende grazie all’automazione intelligente, all’analisi predittiva e alle tecnologie conversazionali.",
+    "quickLinks": "Link rapidi",
+    "contactInfo": "Informazioni di contatto",
+    "contact": {
+      "email": "Inviaci un’email",
+      "emailAddress": "dryptaai@gmail.com",
+      "phone": "Chiamaci",
+      "phoneNumber": "+33 6 35 89 50 73",
+      "message": "Inviaci un messaggio",
+      "quickResponse": "Risposta rapida garantita",
+      "support": "Supporto disponibile",
+      "supportText": "Assistenza clienti 24/7"
+    },
+    "copyright": "© {year} Drypta Agents. Tutti i diritti riservati.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di utilizzo",
+    "cookies": "Politica sui cookie"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "bn": "বাংলা",
+    "it": "Italiano",
+    "hi": "हिन्दी",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

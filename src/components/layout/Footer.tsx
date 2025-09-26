@@ -1,7 +1,10 @@
-import { Mail, MessageCircle, Clock } from 'lucide-react'
+import { Mail, MessageCircle, Clock, Phone } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('footer')
+  const tNav = useTranslations('nav')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -23,12 +26,13 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 max-w-md leading-relaxed">
-              Pioneering AI solutions that transform businesses through intelligent automation,
-              predictive analytics, and conversational AI technologies.
+              {t('description')}
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/drypta-agents/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-800 hover:bg-indigo-600 rounded-lg flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
@@ -37,16 +41,20 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/drypta_ai"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-800 hover:bg-indigo-600 rounded-lg flex items-center justify-center transition-colors"
-                aria-label="Twitter"
+                aria-label="X (Twitter)"
               >
                 <svg className="w-5 h-5 text-gray-400 hover:text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://github.com/D1P70"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-800 hover:bg-indigo-600 rounded-lg flex items-center justify-center transition-colors"
                 aria-label="GitHub"
               >
@@ -59,46 +67,53 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white">{t('quickLinks')}</h3>
             <nav className="space-y-4">
               <a href="#hero" className="block text-gray-400 hover:text-indigo-400 transition-colors">
-                Home
+                {tNav('home')}
               </a>
               <a href="#about" className="block text-gray-400 hover:text-indigo-400 transition-colors">
-                About Us
+                {tNav('about')}
               </a>
               <a href="#services" className="block text-gray-400 hover:text-indigo-400 transition-colors">
-                Services
+                {tNav('services')}
               </a>
               <a href="#contact" className="block text-gray-400 hover:text-indigo-400 transition-colors">
-                Contact
+                {tNav('contact')}
               </a>
             </nav>
           </div>
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <h3 className="text-lg font-semibold text-white">Contact Information</h3>
+            <h3 className="text-lg font-semibold text-white">{t('contactInfo')}</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-indigo-400 flex-shrink-0" />
                 <div>
-                  <p className="text-white font-medium text-sm">Email Us</p>
-                  <p className="text-gray-400 text-sm">diptodev17@gmail.com</p>
+                  <p className="text-white font-medium text-sm">{t('contact.email')}</p>
+                  <a href="mailto:dryptaai@gmail.com" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">{t('contact.emailAddress')}</a>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-indigo-400 flex-shrink-0" />
+                <div>
+                  <p className="text-white font-medium text-sm">{t('contact.phone')}</p>
+                  <a href="tel:+33635895073" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">{t('contact.phoneNumber')}</a>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-5 h-5 text-indigo-400 flex-shrink-0" />
                 <div>
-                  <p className="text-white font-medium text-sm">Message Us</p>
-                  <p className="text-gray-400 text-sm">Quick response guaranteed</p>
+                  <p className="text-white font-medium text-sm">{t('contact.message')}</p>
+                  <p className="text-gray-400 text-sm">{t('contact.quickResponse')}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 text-indigo-400 flex-shrink-0" />
                 <div>
-                  <p className="text-white font-medium text-sm">Support Available</p>
-                  <p className="text-gray-400 text-sm">24/7 Customer Support</p>
+                  <p className="text-white font-medium text-sm">{t('contact.support')}</p>
+                  <p className="text-gray-400 text-sm">{t('contact.supportText')}</p>
                 </div>
               </div>
             </div>
@@ -108,17 +123,17 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-slate-700/50 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
           <div className="text-gray-400 text-sm">
-            © {currentYear} Drypta Agents. All rights reserved.
+            {t('copyright', { year: currentYear })}
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">
-              Privacy Policy
+              {t('privacy')}
             </a>
             <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">
-              Terms of Service
+              {t('terms')}
             </a>
             <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">
-              Cookie Policy
+              {t('cookies')}
             </a>
           </div>
         </div>

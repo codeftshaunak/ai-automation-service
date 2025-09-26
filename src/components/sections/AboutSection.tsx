@@ -2,31 +2,29 @@
 
 import { Target, Eye, Heart, Star, Users, Award } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { useTranslations } from 'next-intl'
 
 const values = [
   {
     icon: Star,
-    title: 'Innovation',
-    description: 'Pushing the boundaries of AI technology to create groundbreaking solutions that redefine what\'s possible.'
+    key: 0
   },
   {
     icon: Award,
-    title: 'Excellence',
-    description: 'Maintaining the highest standards in everything we do, from code quality to client service.'
+    key: 1
   },
   {
     icon: Users,
-    title: 'Collaboration',
-    description: 'Working closely with our clients to understand their needs and deliver tailored solutions.'
+    key: 2
   },
   {
     icon: Heart,
-    title: 'Human-Centered',
-    description: 'Building AI that enhances human capabilities rather than replacing them, fostering meaningful interactions.'
+    key: 3
   }
 ]
 
 export default function AboutSection() {
+  const t = useTranslations('about')
   return (
     <section id="about" className="py-32 relative">
       {/* Subtle Background Effects */}
@@ -36,17 +34,16 @@ export default function AboutSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-sm mb-6">
-            <span className="text-indigo-300 text-sm font-medium">About Us</span>
+            <span className="text-indigo-300 text-sm font-medium">{t('badge')}</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-white">Our</span>{' '}
+            <span className="text-white">{t('our')}</span>{' '}
             <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              Identity
+              {t('identity')}
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            We are pioneers in AI technology, dedicated to creating intelligent solutions that empower
-            businesses to achieve unprecedented growth and efficiency.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -57,12 +54,11 @@ export default function AboutSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-2xl text-white">Mission</CardTitle>
+              <CardTitle className="text-2xl text-white">{t('mission.title')}</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-gray-300 leading-relaxed">
-                To democratize AI technology and make intelligent solutions accessible to businesses
-                of all sizes, enabling them to compete in the digital economy.
+                {t('mission.description')}
               </p>
             </CardContent>
           </Card>
@@ -72,12 +68,11 @@ export default function AboutSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Eye className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-2xl text-white">Vision</CardTitle>
+              <CardTitle className="text-2xl text-white">{t('vision.title')}</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-gray-300 leading-relaxed">
-                A world where AI agents seamlessly integrate into every aspect of business operations,
-                creating unprecedented levels of efficiency and innovation.
+                {t('vision.description')}
               </p>
             </CardContent>
           </Card>
@@ -87,12 +82,11 @@ export default function AboutSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="h-8 w-8 text-white" />
               </div>
-              <CardTitle className="text-2xl text-white">Values</CardTitle>
+              <CardTitle className="text-2xl text-white">{t('values.title')}</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-gray-300 leading-relaxed">
-                Innovation, excellence, collaboration, and human-centered design guide every decision
-                we make and every solution we create.
+                {t('values.description')}
               </p>
             </CardContent>
           </Card>
@@ -101,7 +95,7 @@ export default function AboutSection() {
         {/* Detailed Values Section */}
         <div className="bg-slate-800/50 rounded-3xl p-8 lg:p-12">
           <h3 className="text-3xl font-bold text-white mb-12 text-center">
-            Our Core Values in Action
+            {t('coreValuesTitle')}
           </h3>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -114,10 +108,10 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">
-                      {value.title}
+                      {t(`valuesDetails.${value.key}.title`)}
                     </h4>
                     <p className="text-gray-300 leading-relaxed">
-                      {value.description}
+                      {t(`valuesDetails.${value.key}.description`)}
                     </p>
                   </div>
                 </div>
@@ -130,27 +124,27 @@ export default function AboutSection() {
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              5+
+              {t('stats.experience')}
             </div>
-            <div className="text-gray-400">Years Experience</div>
+            <div className="text-gray-400">{t('stats.experienceLabel')}</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              100+
+              {t('stats.models')}
             </div>
-            <div className="text-gray-400">AI Models Deployed</div>
+            <div className="text-gray-400">{t('stats.modelsLabel')}</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              50+
+              {t('stats.clients')}
             </div>
-            <div className="text-gray-400">Happy Clients</div>
+            <div className="text-gray-400">{t('stats.clientsLabel')}</div>
           </div>
           <div className="space-y-2">
             <div className="text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              24/7
+              {t('stats.support')}
             </div>
-            <div className="text-gray-400">Support Available</div>
+            <div className="text-gray-400">{t('stats.supportLabel')}</div>
           </div>
         </div>
       </div>

@@ -1,68 +1,67 @@
-'use client'
+"use client";
 
-import { Bot, Zap, MessageCircle, TrendingUp, Database, Layers, ArrowRight, Sparkles } from 'lucide-react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import {
+  Bot,
+  Zap,
+  MessageCircle,
+  TrendingUp,
+  Database,
+  Layers,
+  ArrowRight,
+  Sparkles,
+} from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const services = [
   {
     icon: Bot,
-    title: 'Intelligent Agents',
-    description: 'Deploy autonomous AI agents that learn, adapt, and execute complex tasks with minimal human intervention.',
-    features: ['Machine Learning', 'Natural Language Processing', 'Automated Decision Making'],
-    gradient: 'from-indigo-500 to-purple-600',
-    badge: 'Most Popular',
-    badgeVariant: 'default' as const
+    gradient: "from-indigo-500 to-purple-600",
+    badgeVariant: "default" as const,
+    index: 0,
   },
   {
     icon: Zap,
-    title: 'Smart Automation',
-    description: 'Streamline operations with intelligent automation that handles repetitive tasks and optimizes workflows.',
-    features: ['Process Automation', 'Workflow Optimization', 'Task Scheduling'],
-    gradient: 'from-purple-500 to-pink-600',
-    badge: 'Enterprise',
-    badgeVariant: 'secondary' as const
+    gradient: "from-purple-500 to-pink-600",
+    badgeVariant: "secondary" as const,
+    index: 1,
   },
   {
     icon: MessageCircle,
-    title: 'Conversational AI',
-    description: 'Create sophisticated chatbots and virtual assistants that provide human-like interactions.',
-    features: ['Multi-language Support', 'Context Awareness', '24/7 Availability'],
-    gradient: 'from-blue-500 to-indigo-600',
-    badge: 'Customer Favorite',
-    badgeVariant: 'outline' as const
+    gradient: "from-blue-500 to-indigo-600",
+    badgeVariant: "outline" as const,
+    index: 2,
   },
   {
     icon: TrendingUp,
-    title: 'Predictive Intelligence',
-    description: 'Leverage advanced analytics and machine learning to forecast trends and make data-driven decisions.',
-    features: ['Predictive Modeling', 'Risk Assessment', 'Market Analysis'],
-    gradient: 'from-green-500 to-blue-600',
-    badge: 'High ROI',
-    badgeVariant: 'default' as const
+    gradient: "from-green-500 to-blue-600",
+    badgeVariant: "default" as const,
+    index: 3,
   },
   {
     icon: Database,
-    title: 'Data Intelligence',
-    description: 'Transform raw data into actionable insights with our comprehensive data analysis platform.',
-    features: ['Data Mining', 'Pattern Recognition', 'Real-time Analytics'],
-    gradient: 'from-orange-500 to-red-600',
-    badge: 'Scalable',
-    badgeVariant: 'secondary' as const
+    gradient: "from-orange-500 to-red-600",
+    badgeVariant: "secondary" as const,
+    index: 4,
   },
   {
     icon: Layers,
-    title: 'Integration Platform',
-    description: 'Seamlessly integrate AI capabilities into your existing systems and workflows.',
-    features: ['API Integration', 'Custom Solutions', 'Scalable Architecture'],
-    gradient: 'from-teal-500 to-green-600',
-    badge: 'Flexible',
-    badgeVariant: 'outline' as const
-  }
-]
+    gradient: "from-teal-500 to-green-600",
+    badgeVariant: "outline" as const,
+    index: 5,
+  },
+];
 
 export default function ServicesSection() {
+  const t = useTranslations("services");
   return (
     <section id="services" className="py-32 bg-slate-800/30 relative">
       {/* Background Effects */}
@@ -73,58 +72,73 @@ export default function ServicesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-sm mb-6">
-            <span className="text-indigo-300 text-sm font-medium">Our Services</span>
+            <span className="text-indigo-300 text-sm font-medium">
+              {t("badge")}
+            </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-white">AI Solutions</span>{' '}
+            <span className="text-white">{t("aiSolutions")}</span>{" "}
             <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              Tailored for You
+              {t("tailored")}
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            From intelligent automation to predictive analytics, we offer comprehensive AI solutions
-            that transform how businesses operate and compete.
+            {t("subtitle")}
           </p>
         </div>
 
         {/* Enhanced Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10">
           {services.map((service, index) => {
-            const Icon = service.icon
+            const Icon = service.icon;
             return (
               <Card
                 key={index}
                 className="group relative h-full bg-slate-800/30 border-slate-600/30 hover:border-indigo-400/50 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:shadow-indigo-500/15 backdrop-blur-sm overflow-hidden rounded-2xl"
               >
                 {/* Background Gradient Effect */}
-                <div className={`absolute -inset-px bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-500 rounded-2xl blur-sm`} />
+                <div
+                  className={`absolute -inset-px bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-500 rounded-2xl blur-sm`}
+                />
 
                 {/* Badge */}
                 <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-10">
-                  <Badge variant={service.badgeVariant} className="text-xs font-semibold px-3 py-1">
-                    {service.badge}
+                  <Badge
+                    variant={service.badgeVariant}
+                    className="text-xs font-semibold px-3 py-1"
+                  >
+                    {t(`items.${service.index}.badge`)}
                   </Badge>
                 </div>
 
                 <CardHeader className="pb-6 relative p-8">
-                  <div className={`w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xl`}>
+                  <div
+                    className={`w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-3xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xl`}
+                  >
                     <Icon className="h-10 w-10 text-white drop-shadow-sm" />
                   </div>
                   <CardTitle className="text-2xl text-white group-hover:text-indigo-300 transition-colors font-black mb-4 leading-tight">
-                    {service.title}
+                    {t(`items.${service.index}.title`)}
                   </CardTitle>
                   <CardDescription className="text-gray-300 text-base leading-relaxed group-hover:text-gray-200 transition-colors line-clamp-3">
-                    {service.description}
+                    {t(`items.${service.index}.description`)}
                   </CardDescription>
                 </CardHeader>
 
                 <CardContent className="relative px-8 pb-8 flex-1">
                   <div className="space-y-6 h-full flex flex-col justify-between">
                     <ul className="space-y-4 flex-1">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
-                          <div className={`w-3 h-3 bg-gradient-to-r ${service.gradient} rounded-full mr-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0`} />
-                          <span className="font-medium">{feature}</span>
+                      {[0, 1, 2].map((featureIndex) => (
+                        <li
+                          key={featureIndex}
+                          className="flex items-center text-sm text-gray-400 group-hover:text-gray-300 transition-colors"
+                        >
+                          <div
+                            className={`w-3 h-3 bg-gradient-to-r ${service.gradient} rounded-full mr-4 opacity-60 group-hover:opacity-100 transition-opacity flex-shrink-0`}
+                          />
+                          <span className="font-medium">
+                            {t(`items.${service.index}.features.${featureIndex}`)}
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -136,14 +150,14 @@ export default function ServicesSection() {
                         size="sm"
                         className="w-full justify-between text-indigo-300 hover:text-white hover:bg-indigo-500/20 py-3 rounded-xl font-semibold"
                       >
-                        Learn More
+                        {t("learnMore")}
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            )
+            );
           })}
         </div>
 
@@ -161,36 +175,42 @@ export default function ServicesSection() {
 
             <div className="relative z-10 space-y-8">
               <div className="flex justify-center mb-6">
-                <Badge variant="outline" className="px-4 py-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border-indigo-400/30">
+                <Badge
+                  variant="outline"
+                  className="px-4 py-2 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border-indigo-400/30"
+                >
                   <Sparkles className="w-4 h-4 mr-2" />
-                  Start Your AI Journey
+                  {t("cta.badge")}
                 </Badge>
               </div>
 
               <h3 className="text-4xl font-black text-white mb-6">
-                Ready to{' '}
+                {t("cta.ready")}{" "}
                 <span className="bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
-                  Transform
-                </span>{' '}
-                Your Business?
+                  {t("cta.transform")}
+                </span>{" "}
+                {t("cta.yourBusiness")}
               </h3>
 
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Let our AI experts design a custom solution that fits your specific needs and objectives.
-                <span className="text-indigo-300 font-medium"> Get started with a free consultation today.</span>
+                {t("cta.description")}
+                <span className="text-indigo-300 font-medium">
+                  {" "}
+                  {t("cta.descriptionHighlight")}
+                </span>
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button
                   size="lg"
                   onClick={() => {
-                    const element = document.getElementById('contact')
-                    if (element) element.scrollIntoView({ behavior: 'smooth' })
+                    const element = document.getElementById("contact");
+                    if (element) element.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 text-white px-10 py-6 text-lg font-bold rounded-full shadow-2xl hover:shadow-indigo-500/25 transition-all duration-300 transform hover:scale-105"
                 >
                   <span className="flex items-center">
-                    Schedule Consultation
+                    {t("cta.scheduleConsultation")}
                     <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Button>
@@ -200,7 +220,7 @@ export default function ServicesSection() {
                   variant="outline"
                   className="group border-2 border-indigo-400/40 bg-slate-800/40 backdrop-blur-xl text-indigo-300 hover:text-white hover:bg-indigo-500/20 px-10 py-6 text-lg font-bold rounded-full transition-all duration-300 hover:border-indigo-400 hover:scale-105"
                 >
-                  View Pricing
+                  {t("cta.viewPricing")}
                 </Button>
               </div>
             </div>
@@ -208,5 +228,5 @@ export default function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -3,8 +3,10 @@
 import { ArrowRight, Play, Sparkles, Zap, Brain } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { useTranslations } from 'next-intl'
 
 export default function HeroSection() {
+  const t = useTranslations('hero')
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -35,7 +37,7 @@ export default function HeroSection() {
             <Badge variant="outline" className="px-4 py-2 text-sm bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border-indigo-500/30 backdrop-blur-xl">
               <Sparkles className="w-5 h-5 mr-2 text-indigo-400" />
               <span className="bg-gradient-to-r from-indigo-300 to-purple-300 bg-clip-text text-transparent font-semibold">
-                Next-Generation AI Solutions
+                {t('badge')}
               </span>
             </Badge>
           </div>
@@ -45,25 +47,25 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none">
               <span className="block mb-4">
                 <span className="bg-gradient-to-r from-indigo-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent animate-pulse">
-                  AI Agents
+                  {t('aiAgents')}
                 </span>
-                <span className="text-white/90 ml-4">that</span>
+                <span className="text-white/90 ml-4">{t('that')}</span>
               </span>
               <span className="block relative">
                 <span className="bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-transparent">
-                  Transform
+                  {t('transform')}
                 </span>
                 <span className="absolute -inset-1 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 blur-xl -z-10 animate-pulse" />
               </span>
               <span className="block text-white/80 text-base sm:text-lg lg:text-xl font-medium mt-4 tracking-wide">
-                Everything
+                {t('everything')}
               </span>
             </h1>
 
             {/* Enhanced Subtitle */}
             <p className="max-w-4xl mx-auto text-lg sm:text-xl text-gray-300 leading-relaxed font-light">
-              Deploy autonomous AI agents that learn, adapt, and execute complex business operations
-              <span className="text-indigo-300 font-medium"> with unprecedented intelligence.</span>
+              {t('subtitle')}
+              <span className="text-indigo-300 font-medium"> {t('subtitleHighlight')}</span>
             </p>
           </div>
 
@@ -77,7 +79,7 @@ export default function HeroSection() {
               <span className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-300" />
               <span className="relative flex items-center">
                 <Zap className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
-                Explore Solutions
+                {t('cta')}
                 <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
               </span>
             </Button>
@@ -89,7 +91,7 @@ export default function HeroSection() {
               className="group relative border-2 border-indigo-400/30 bg-slate-800/30 backdrop-blur-xl text-indigo-300 hover:text-white hover:bg-indigo-500/20 px-8 py-4 text-lg font-bold rounded-full transition-all duration-300 hover:border-indigo-400 hover:scale-105"
             >
               <Play className="mr-3 h-6 w-6 group-hover:scale-110 transition-transform" />
-              Watch Demo
+              {t('watchDemo')}
               <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600/0 via-purple-600/0 to-indigo-600/0 group-hover:from-indigo-600/20 group-hover:via-purple-600/20 group-hover:to-indigo-600/20 rounded-full blur transition-all duration-300" />
             </Button>
           </div>
@@ -103,10 +105,10 @@ export default function HeroSection() {
                     <Brain className="w-8 h-8 mx-auto text-indigo-400 group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="text-2xl font-black bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                    300%
+                    {t('stats.roi')}
                   </div>
-                  <div className="text-gray-300 font-medium">Average ROI Increase</div>
-                  <div className="text-sm text-gray-500">Within 12 months</div>
+                  <div className="text-gray-300 font-medium">{t('stats.roiLabel')}</div>
+                  <div className="text-sm text-gray-500">{t('stats.roiSubtext')}</div>
                 </div>
               </div>
 
@@ -116,10 +118,10 @@ export default function HeroSection() {
                     <Zap className="w-8 h-8 mx-auto text-purple-400 group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="text-2xl font-black bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
-                    50+
+                    {t('stats.clients')}
                   </div>
-                  <div className="text-gray-300 font-medium">Enterprise Clients</div>
-                  <div className="text-sm text-gray-500">Trusted worldwide</div>
+                  <div className="text-gray-300 font-medium">{t('stats.clientsLabel')}</div>
+                  <div className="text-sm text-gray-500">{t('stats.clientsSubtext')}</div>
                 </div>
               </div>
 
@@ -129,10 +131,10 @@ export default function HeroSection() {
                     <Sparkles className="w-8 h-8 mx-auto text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="text-2xl font-black bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                    99.9%
+                    {t('stats.uptime')}
                   </div>
-                  <div className="text-gray-300 font-medium">Uptime Guarantee</div>
-                  <div className="text-sm text-gray-500">24/7 reliability</div>
+                  <div className="text-gray-300 font-medium">{t('stats.uptimeLabel')}</div>
+                  <div className="text-sm text-gray-500">{t('stats.uptimeSubtext')}</div>
                 </div>
               </div>
             </div>
