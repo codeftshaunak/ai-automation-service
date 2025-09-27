@@ -1,122 +1,109 @@
-'use client'
+"use client";
 
-import { useState, FormEvent } from 'react'
-import { TrendingUp, Shield, Users, Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Label } from '@/components/ui/label'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import toast, { Toaster } from 'react-hot-toast'
-import { useTranslations } from 'next-intl'
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+import useContactSubmit from "@/hooks/useContactSubmit";
+import {
+  CheckCircle,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Shield,
+  TrendingUp,
+  Users,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
+import { FormEvent, useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 interface FormData {
-  firstName: string
-  lastName: string
-  email: string
-  company: string
-  phone: string
-  industry: string
-  budget: string
-  projectType: string
-  message: string
+  firstName: string;
+  lastName: string;
+  email: string;
+  company: string;
+  phone: string;
+  industry: string;
+  budget: string;
+  projectType: string;
+  message: string;
 }
 
 const benefits = [
   {
     icon: TrendingUp,
-    index: 0
+    index: 0,
   },
   {
     icon: Shield,
-    index: 1
+    index: 1,
   },
   {
     icon: Users,
-    index: 2
-  }
-]
+    index: 2,
+  },
+];
 
 export default function ContactSection() {
-  const t = useTranslations('contact')
+  const t = useTranslations("contact");
+  const { isLoading, isError, isSuccess, error, submit } = useContactSubmit();
   const [formData, setFormData] = useState<FormData>({
-    firstName: '',
-    lastName: '',
-    email: '',
-    company: '',
-    phone: '',
-    industry: '',
-    budget: '',
-    projectType: '',
-    message: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+    firstName: "",
+    lastName: "",
+    email: "",
+    company: "",
+    phone: "",
+    industry: "",
+    budget: "",
+    projectType: "",
+    message: "",
+  });
 
   const handleInputChange = (field: keyof FormData, value: string) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [field]: value
-    }))
-  }
+      [field]: value,
+    }));
+  };
 
   const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
 
     try {
-      // Create email content
-      const emailContent = `
-New Contact Form Submission:
-
-Name: ${formData.firstName} ${formData.lastName}
-Email: ${formData.email}
-Company: ${formData.company}
-Phone: ${formData.phone}
-Industry: ${formData.industry}
-Budget: ${formData.budget}
-Project Type: ${formData.projectType}
-
-Message:
-${formData.message}
-      `
-
-      // Send email using EmailJS (you'll need to configure this)
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          to: 'diptodev17@gmail.com',
-          subject: `New Contact Form Submission from ${formData.firstName} ${formData.lastName}`,
-          text: emailContent
-        }),
-      })
-
-      if (response.ok) {
-        toast.success(t('success'))
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          company: '',
-          phone: '',
-          industry: '',
-          budget: '',
-          projectType: '',
-          message: ''
-        })
-      } else {
-        throw new Error('Failed to send message')
-      }
-    } catch (error) {
-      console.error('Error sending message:', error)
-      toast.error(t('error'))
-    } finally {
-      setIsSubmitting(false)
+      await submit(formData);
+      toast.success(t("success"));
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        company: "",
+        phone: "",
+        industry: "",
+        budget: "",
+        projectType: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error("Error sending message:", err);
     }
-  }
+  };
+
+  // Show error toast when error state changes
+  useEffect(() => {
+    if (isError && error) {
+      toast.error(error);
+    }
+  }, [isError, error]);
 
   return (
     <>
@@ -130,16 +117,18 @@ ${formData.message}
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-sm mb-6">
-              <span className="text-indigo-300 text-sm font-medium">{t('badge')}</span>
+              <span className="text-indigo-300 text-sm font-medium">
+                {t("badge")}
+              </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              {t('start')}{' '}
+              {t("start")}{" "}
               <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                {t('transformation')}
+                {t("transformation")}
               </span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              {t('subtitle')}
+              {t("subtitle")}
             </p>
           </div>
 
@@ -149,12 +138,12 @@ ${formData.message}
               <div className="bg-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/50">
                 <h3 className="text-2xl font-semibold mb-8 flex items-center text-white">
                   <CheckCircle className="w-6 h-6 text-indigo-400 mr-3" />
-                  {t('whyPartner')}
+                  {t("whyPartner")}
                 </h3>
 
                 <div className="space-y-6">
                   {benefits.map((benefit, index) => {
-                    const Icon = benefit.icon
+                    const Icon = benefit.icon;
                     return (
                       <div key={index} className="flex items-start space-x-4">
                         <div className="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center mt-1 flex-shrink-0">
@@ -169,7 +158,7 @@ ${formData.message}
                           </p>
                         </div>
                       </div>
-                    )
+                    );
                   })}
                 </div>
 
@@ -177,15 +166,15 @@ ${formData.message}
                 <div className="mt-8 pt-8 border-t border-slate-600/50 space-y-4">
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Mail className="w-5 h-5 text-indigo-400" />
-                    <span>{t('contactInfo.email')}</span>
+                    <span>{t("contactInfo.email")}</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Phone className="w-5 h-5 text-indigo-400" />
-                    <span>{t('contactInfo.phone')}</span>
+                    <span>{t("contactInfo.phone")}</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <MapPin className="w-5 h-5 text-indigo-400" />
-                    <span>{t('contactInfo.location')}</span>
+                    <span>{t("contactInfo.location")}</span>
                   </div>
                 </div>
               </div>
@@ -195,7 +184,9 @@ ${formData.message}
             <div>
               <Card className="bg-slate-700/30 border-slate-600/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white">{t('form.title')}</CardTitle>
+                  <CardTitle className="text-2xl text-white">
+                    {t("form.title")}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -203,24 +194,28 @@ ${formData.message}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="firstName" className="text-gray-300">
-                          {t('form.firstName')} {t('form.required')}
+                          {t("form.firstName")} {t("form.required")}
                         </Label>
                         <Input
                           id="firstName"
                           value={formData.firstName}
-                          onChange={(e) => handleInputChange('firstName', e.target.value)}
+                          onChange={(e) =>
+                            handleInputChange("firstName", e.target.value)
+                          }
                           className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500"
                           required
                         />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName" className="text-gray-300">
-                          {t('form.lastName')} {t('form.required')}
+                          {t("form.lastName")} {t("form.required")}
                         </Label>
                         <Input
                           id="lastName"
                           value={formData.lastName}
-                          onChange={(e) => handleInputChange('lastName', e.target.value)}
+                          onChange={(e) =>
+                            handleInputChange("lastName", e.target.value)
+                          }
                           className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500"
                           required
                         />
@@ -231,13 +226,15 @@ ${formData.message}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="email" className="text-gray-300">
-                          {t('form.email')} {t('form.required')}
+                          {t("form.email")} {t("form.required")}
                         </Label>
                         <Input
                           id="email"
                           type="email"
                           value={formData.email}
-                          onChange={(e) => handleInputChange('email', e.target.value)}
+                          onChange={(e) =>
+                            handleInputChange("email", e.target.value)
+                          }
                           className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500"
                           required
                         />
@@ -249,7 +246,9 @@ ${formData.message}
                         <Input
                           id="company"
                           value={formData.company}
-                          onChange={(e) => handleInputChange('company', e.target.value)}
+                          onChange={(e) =>
+                            handleInputChange("company", e.target.value)
+                          }
                           className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500"
                           required
                         />
@@ -259,13 +258,15 @@ ${formData.message}
                     {/* Phone */}
                     <div className="space-y-2">
                       <Label htmlFor="phone" className="text-gray-300">
-                        {t('form.phone')}
+                        {t("form.phone")}
                       </Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
-                        onChange={(e) => handleInputChange('phone', e.target.value)}
+                        onChange={(e) =>
+                          handleInputChange("phone", e.target.value)
+                        }
                         className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500"
                       />
                     </div>
@@ -273,32 +274,58 @@ ${formData.message}
                     {/* Industry and Budget */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label className="text-gray-300">{t('form.industry')}</Label>
-                        <Select value={formData.industry} onValueChange={(value) => handleInputChange('industry', value)}>
+                        <Label className="text-gray-300">
+                          {t("form.industry")}
+                        </Label>
+                        <Select
+                          value={formData.industry}
+                          onValueChange={(value) =>
+                            handleInputChange("industry", value)
+                          }
+                        >
                           <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white">
                             <SelectValue placeholder="Select industry" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="technology">Technology</SelectItem>
+                            <SelectItem value="technology">
+                              Technology
+                            </SelectItem>
                             <SelectItem value="finance">Finance</SelectItem>
-                            <SelectItem value="healthcare">Healthcare</SelectItem>
+                            <SelectItem value="healthcare">
+                              Healthcare
+                            </SelectItem>
                             <SelectItem value="retail">Retail</SelectItem>
-                            <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                            <SelectItem value="manufacturing">
+                              Manufacturing
+                            </SelectItem>
                             <SelectItem value="other">Other</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
                       <div className="space-y-2">
-                        <Label className="text-gray-300">{t('form.budget')}</Label>
-                        <Select value={formData.budget} onValueChange={(value) => handleInputChange('budget', value)}>
+                        <Label className="text-gray-300">
+                          {t("form.budget")}
+                        </Label>
+                        <Select
+                          value={formData.budget}
+                          onValueChange={(value) =>
+                            handleInputChange("budget", value)
+                          }
+                        >
                           <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white">
                             <SelectValue placeholder="Select budget" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="under-10k">Under $10K</SelectItem>
+                            <SelectItem value="under-10k">
+                              Under $10K
+                            </SelectItem>
                             <SelectItem value="10k-50k">$10K - $50K</SelectItem>
-                            <SelectItem value="50k-100k">$50K - $100K</SelectItem>
-                            <SelectItem value="over-100k">Over $100K</SelectItem>
+                            <SelectItem value="50k-100k">
+                              $50K - $100K
+                            </SelectItem>
+                            <SelectItem value="over-100k">
+                              Over $100K
+                            </SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -307,17 +334,34 @@ ${formData.message}
                     {/* Project Type */}
                     <div className="space-y-2">
                       <Label className="text-gray-300">Project Type</Label>
-                      <Select value={formData.projectType} onValueChange={(value) => handleInputChange('projectType', value)}>
+                      <Select
+                        value={formData.projectType}
+                        onValueChange={(value) =>
+                          handleInputChange("projectType", value)
+                        }
+                      >
                         <SelectTrigger className="bg-slate-800/50 border-slate-600/50 text-white">
                           <SelectValue placeholder="What are you interested in?" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="ai-agents">AI Agents Development</SelectItem>
-                          <SelectItem value="automation">Process Automation</SelectItem>
-                          <SelectItem value="chatbot">Conversational AI</SelectItem>
-                          <SelectItem value="analytics">Predictive Analytics</SelectItem>
-                          <SelectItem value="integration">System Integration</SelectItem>
-                          <SelectItem value="consultation">General Consultation</SelectItem>
+                          <SelectItem value="ai-agents">
+                            AI Agents Development
+                          </SelectItem>
+                          <SelectItem value="automation">
+                            Process Automation
+                          </SelectItem>
+                          <SelectItem value="chatbot">
+                            Conversational AI
+                          </SelectItem>
+                          <SelectItem value="analytics">
+                            Predictive Analytics
+                          </SelectItem>
+                          <SelectItem value="integration">
+                            System Integration
+                          </SelectItem>
+                          <SelectItem value="consultation">
+                            General Consultation
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -330,7 +374,9 @@ ${formData.message}
                       <Textarea
                         id="message"
                         value={formData.message}
-                        onChange={(e) => handleInputChange('message', e.target.value)}
+                        onChange={(e) =>
+                          handleInputChange("message", e.target.value)
+                        }
                         className="bg-slate-800/50 border-slate-600/50 text-white focus:border-indigo-500 min-h-[120px]"
                         placeholder="Tell us about your project, goals, and how we can help..."
                         required
@@ -340,14 +386,14 @@ ${formData.message}
                     {/* Submit Button */}
                     <Button
                       type="submit"
-                      disabled={isSubmitting}
+                      disabled={isLoading}
                       className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-3 text-lg font-semibold group"
                     >
-                      {isSubmitting ? (
-                        'Sending...'
+                      {isLoading ? (
+                        "Sending..."
                       ) : (
                         <>
-                          {isSubmitting ? t('form.submitting') : t('form.submit')}
+                          {isLoading ? t("form.submitting") : t("form.submit")}
                           <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </>
                       )}
@@ -360,5 +406,5 @@ ${formData.message}
         </div>
       </section>
     </>
-  )
+  );
 }
